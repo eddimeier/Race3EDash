@@ -130,57 +130,41 @@
     </div>
 
     <script>
+        const klassenNamen = {
+            255: "Sports GT"
+        };
+
         async function ladeFahrzeugDaten() {
             const container = document.getElementById('cards-container');
             
             try {
+                // Den Dateinamen 'daten.json' anpassen, falls deine JSON-Datei anders heißt!
                 const response = await fetch('daten.json');
                 if (!response.ok) throw new Error(`Fehler: ${response.status}`);
                 
                 const data = await response.json();
                 container.innerHTML = ''; 
                 
-                // 1. Liest die echten Klassennamen dynamisch aus dem Reiter "classes" deiner JSON
-                const klassenMapping = {};
-                const jsonKlassen = data.classes || data.Classes || {};
-                Object.values(jsonKlassen).forEach(cls => {
-                    const id = cls.Id || cls.id;
-                    const name = cls.Name || cls.name || cls.IdName;
-                    if (id && name) klassenMapping[id] = name;
-                });
-
-                // 2. Liest die Hersteller aus dem Reiter "manufactures" deiner JSON
-                const herstellerMapping = {};
-                const jsonHersteller = data.manufactures || data.manufacturers || {};
-                Object.values(jsonHersteller).forEach(man => {
-                    const id = man.Id || man.id;
-                    const name = man.Name || man.name;
-                    if (id && name) herstellerMapping[id] = name;
-                });
-                
-                const alleAutos = Object.values(data.cars || {});
+                const alleAutos = Object.values(data.cars);
                 
                 alleAutos.forEach(car => {
-                    if (!car || !car.liveries) return;
-                    
-                    // DIE REPARATUR: Holt den Namen aus dem JSON-Mapping, Fallback ist die reine ID-Nummer
-                    const klasseText = klassenMapping[car.Class] || "Klasse " + car.Class;
-                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "";
+                    if (!car.liveries) return;
                     
                     car.liveries.forEach(livery => {
-                        if (!livery || !livery.drivers) return;
+                        if (!livery.drivers) return;
                         
                         livery.drivers.forEach(driver => {
                             const card = document.createElement('div');
                             card.className = 'card';
                             
-                            // Die funktionierende Bild-URL
-                            const bildPfad = "https://raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
+                            // EXAKTE URL MIT $ UND {LIVERY.ID} – PERFEKT FÜR GITHUB
+                            const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
                             
-                            // Saubere Zusammenführung des Autonamens
-                            const fahrzeugName = (car.Name && car.Name.startsWith(herstellerText)) 
+                            const klasseAnzeige = klassenNamen[car.Class] || `Klasse (ID ${car.Class})`;
+                            
+                            const fahrzeugName = car.Name.startsWith(car.BrandName) 
                                 ? car.Name 
-                                : herstellerText + " " + (car.Name || "");
+                                : `${car.BrandName} ${car.Name}`;
                             
                             card.innerHTML = `
                                 <div class="image-container">
@@ -193,7 +177,7 @@
                                         <div class="car-name">🏎️ ${fahrzeugName}</div>
                                     </div>
                                     <div class="meta-container">
-                                        <span class="klasse-tag">${klasseText}</span>
+                                        <span class="klasse-tag">${klasseAnzeige}</span>
                                         <span class="livery-tag">Startnummer: ${livery.Name}</span>
                                     </div>
                                 </div>
