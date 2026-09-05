@@ -187,12 +187,10 @@
                             card.className = 'card';
                             
                             // Die funktionierende Bild-URL
-                            const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
-
+                            const bildPfad = "https://raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
                             
-                            // Dynamische URL für das Klassenlogo direkt vom RaceRoom-Servercar.Class
-                            const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + car.Class + "&size=small"; 
-
+                            // Dynamische URL für das Klassenlogo direkt vom RaceRoom-Server
+                            const klasseLogoUrl = "https://raceroom.com/store/image_redirect?id=" + car.Class + "&size=small";
                             
                             // Saubere Zusammenführung des Autonamens
                             const fahrzeugName = (car.Name && car.Name.startsWith(herstellerText)) 
