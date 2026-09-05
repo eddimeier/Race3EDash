@@ -16,57 +16,85 @@
         h1 {
             text-align: center;
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
-        /* Filterbox nahtlos integriert */
-        .filter-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+        /* Container für die Logo-Filter */
+        .logo-filter-section {
             max-width: 1400px;
             margin: 0 auto 30px auto;
             background: #2a2a2a;
-            padding: 20px;
+            padding: 15px;
             border-radius: 12px;
             border: 1px solid #3a3a3a;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
-        .filter-item {
-            flex: 1;
-            min-width: 200px;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .filter-item label {
+        .filter-heading {
             font-size: 0.85em;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #95a5a6;
             font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 5px;
         }
 
-        .filter-item select {
+        .logo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* Die klickbaren Logo-Buttons */
+        .logo-btn {
             background: #1a1a1a;
-            border: 1px solid #444;
-            color: #fff;
-            padding: 10px;
-            border-radius: 6px;
-            font-size: 1em;
-            outline: none;
-            transition: border-color 0.2s;
+            border: 2px solid #444;
+            border-radius: 8px;
+            padding: 8px 15px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            min-width: 80px;
+            height: 45px;
         }
 
-        .filter-item select:focus {
+        .logo-btn img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: brightness(0.9) invert(0); /* Für helle Logos auf dunklem Grund */
+        }
+
+        .logo-btn:hover {
             border-color: #e74c3c;
+            background: #222;
         }
 
+        /* Status wenn ein Logo ausgewählt ist */
+        .logo-btn.active {
+            border-color: #e74c3c;
+            background: #e74c3c;
+            box-shadow: 0 0 10px rgba(231, 76, 60, 0.4);
+        }
+        
+        .logo-btn.active img {
+            filter: brightness(1) invert(1); /* Invertiert Logo-Farbe auf rotem Grund */
+        }
+
+        .logo-btn.all-btn {
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        /* Grid für die Auto-Karten */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -88,7 +116,6 @@
             height: 100%;
         }
 
-        /* Versteckt Karten, die nicht zum Filter passen */
         .card.hidden {
             display: none !important;
         }
@@ -160,6 +187,17 @@
             font-size: 0.8em;
             font-weight: bold;
             letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Kleines Logo direkt auf dem Karten-Tag */
+        .mini-logo {
+            height: 12px;
+            width: auto;
+            object-fit: contain;
+            filter: brightness(1) invert(1);
         }
 
         .livery-tag {
@@ -184,19 +222,16 @@
 
     <h1>RaceRoom Grid Dashboard</h1>
     
-    <!-- Filterauswahl über den Karten -->
-    <div class="filter-container">
-        <div class="filter-item">
-            <label for="filter-class">Klasse filtern</label>
-            <select id="filter-class">
-                <option value="all">Alle Klassen</option>
-            </select>
+    <!-- Visuelle Logo-Filterleiste -->
+    <div class="logo-filter-section">
+        <div class="filter-heading">Nach Klasse filtern</div>
+        <div class="logo-grid" id="class-logo-grid">
+            <button class="logo-btn all-btn active" data-filter="all" data-type="class">Alle Klassen</button>
         </div>
-        <div class="filter-item">
-            <label for="filter-brand">Manufaktur filtern</label>
-            <select id="filter-brand">
-                <option value="all">Alle Hersteller</option>
-            </select>
+
+        <div class="filter-heading" id="manufacturer-heading">Nach Manufaktur filtern</div>
+        <div class="logo-grid" id="brand-logo-grid">
+            <button class="logo-btn all-btn active" data-filter="all" data-type="brand">Alle Marken</button>
         </div>
     </div>
     
@@ -205,8 +240,9 @@
     </div>
 
     <script>
-        // Dieses Array merkt sich alle geladenen Karten für die Filterung
         let alleKartenDaten = [];
+        let aktiverKlassenFilter = "all";
+        let aktiverMarkenFilter = "all";
 
         async function ladeFahrzeugDaten() {
             const container = document.getElementById('cards-container');
@@ -218,7 +254,7 @@
                 const data = await response.json();
                 container.innerHTML = ''; 
                 
-                // 1. Hier lesen wir die echten Klassennamen dynamisch aus deinem JSON aus
+                // Klarnamen-Mappings (falls sie funktionieren)
                 const klassenMapping = {};
                 const jsonKlassen = data.classes || data.Classes || {};
                 Object.values(jsonKlassen).forEach(cls => {
@@ -227,7 +263,6 @@
                     if (id && name) klassenMapping[id] = name;
                 });
 
-                // 2. Hier lesen wir die Hersteller aus, um "Aquila Aquila" Dopplungen zu vermeiden
                 const herstellerMapping = {};
                 const jsonHersteller = data.manufactures || data.manufacturers || {};
                 Object.values(jsonHersteller).forEach(man => {
@@ -238,20 +273,19 @@
                 
                 const alleAutos = Object.values(data.cars || {});
                 
-                // Speicherboxen, um Duplikate in den Listen zu verhindern
-                const verfuegbareKlassen = new Set();
-                const verfuegbareHersteller = new Set();
+                // Sets für die IDs, um die Logos oben zu generieren
+                const klassenIds = new Set();
+                const herstellerIds = new Set();
                 
                 alleAutos.forEach(car => {
                     if (!car || !car.liveries) return;
                     
-                    // Holt den echten Namen aus der JSON-Liste, Fallback ist die ID
                     const klasseText = klassenMapping[car.Class] || "Klasse " + car.Class;
-                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "Unbekannt";
+                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "";
                     
-                    // Werte für die Menüs sammeln
-                    verfuegbareKlassen.add(klasseText);
-                    verfuegbareHersteller.add(herstellerText);
+                    // IDs für die Logo-Leisten sammeln
+                    klassenIds.add(car.Class);
+                    if (car.CarManufacturer) herstellerIds.add(car.CarManufacturer);
                     
                     car.liveries.forEach(livery => {
                         if (!livery || !livery.drivers) return;
@@ -260,10 +294,11 @@
                             const card = document.createElement('div');
                             card.className = 'card';
                             
-                            // Die funktionierende Bild-URL
-                            const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
+                            const bildPfad = "https://raceroom.com" + livery.Id + "&size=small"; 
                             
-                            // Saubere Zusammenführung des Autonamens
+                            // Offizielle Logo-Links von den RaceRoom-Servern anhand der IDs generiert
+                            const klasseLogoUrl = "https://raceroom.com" + car.Class + "&size=small";
+                            
                             const fahrzeugName = (car.Name && car.Name.startsWith(herstellerText)) 
                                 ? car.Name 
                                 : herstellerText + " " + (car.Name || "");
@@ -272,21 +307,3 @@
                                 <div class="image-container">
                                     <img src="${bildPfad}" alt="${fahrzeugName}">
                                 </div>
-                                <div class="card-content">
-                                    <div>
-                                        <h2 class="fahrer-name">${driver.Forename} ${driver.Surname}</h2>
-                                        <p class="team-name">${livery.TeamName || 'Privatfahrer'}</p>
-                                        <div class="car-name">🏎️ ${fahrzeugName}</div>
-                                    </div>
-                                    <div class="meta-container">
-                                        <span class="klasse-tag">${klasseText}</span>
-                                        <span class="livery-tag">Startnummer: ${livery.Name}</span>
-                                    </div>
-                                </div>
-                            `;
-                            
-                            container.appendChild(card);
-
-                            // Karte im Filter-Speicher registrieren
-                            alleKartenDaten.push({
-                                element: card,
