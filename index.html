@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaceRoom Startaufstellung</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 20px;
+            color: #eee;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #3a3a3a;
+            display: flex;
+            flex-direction: column;
+            min-height: 400px;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(231, 76, 60, 0.2);
+            border-color: #e74c3c;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 180px;
+            background-color: #111;
+            border-bottom: 3px solid #e74c3c;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .fahrer-name {
+            font-size: 1.4em;
+            margin: 0 0 5px 0;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .team-name {
+            font-size: 1em;
+            color: #e74c3c;
+            margin: 0 0 12px 0;
+            font-weight: 600;
+        }
+
+        .car-name {
+            font-size: 0.95em;
+            color: #bbb;
+            margin: 0 0 20px 0;
+            background: #1e1e1e;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .meta-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .klasse-tag {
+            background-color: #34495e;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .livery-tag {
+            font-size: 0.85em;
+            color: #95a5a6;
+            font-weight: 600;
+            background: #111;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>RaceRoom Grid Dashboard</h1>
+    
+    <div class="grid-container" id="cards-container">
+        <p style="text-align: center; width: 100%;">Lade Fahrzeug- und Fahrerdaten aus der Simulation...</p>
+    </div>
+
+    <script>
+        const klassenNamen = {
+            255: "Sports GT"
+        };
+
+        async function ladeFahrzeugDaten() {
+            const container = document.getElementById('cards-container');
+            
+            try {
+                const response = await fetch('daten.json');
+                if (!response.ok) throw new Error(`Fehler: ${response.status}`);
+                
+                const data = await response.json();
+                container.innerHTML = ''; 
+                
+                const alleAutos = Object.values(data.cars);
+                
+                alleAutos.forEach(car => {
+                    if (!car.liveries) return;
+                    
+                    car.liveries.forEach(livery => {
+                        if (!livery.drivers) return;
+                        
+                        livery.drivers.forEach(driver => {
+                            const card = document.createElement('div');
+                            card.className = 'card';
+                            
+                            // Greift jetzt zu 100% lokal auf deine "auto.jpg" zu
+                            const bildPfad = `https://raceroom.com{livery.Id}&size=full`; 
+                            
+                            const klasseAnzeige = klassenNamen[car.Class] || `Klasse (ID ${car.Class})`;
+                            
+                            const fahrzeugName = car.Name.startsWith(car.BrandName) 
+                                ? car.Name 
+                                : `${car.BrandName} ${car.Name}`;
+                            
+                            card.innerHTML = `
+                                <div class="image-container">
+                                    <img src="${bildPfad}" alt="${fahrzeugName}">
+                                </div>
+                                <div class="card-content">
+                                    <div>
+                                        <h2 class="fahrer-name">${driver.Forename} ${driver.Surname}</h2>
+                                        <p class="team-name">${livery.TeamName || 'Privatfahrer'}</p>
+                                        <div class="car-name">🏎️ ${fahrzeugName}</div>
+                                    </div>
+                                    <div class="meta-container">
+                                        <span class="klasse-tag">${klasseAnzeige}</span>
+                                        <span class="livery-tag">Startnummer: ${livery.Name}</span>
+                                    </div>
+                                </div>
+                            `;
+                            
+                            container.appendChild(card);
+                        });
+                    });
+                });
+                
+            } catch (error) {
+                console.error("Fehler:", error);
+                container.innerHTML = `<p style="color: #e74c3c; text-align: center; width: 100%;">Fehler beim Laden der Live-Daten.</p>`;
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', ladeFahrzeugDaten);
+    </script>
+</body>
+</html>
