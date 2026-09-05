@@ -138,6 +138,7 @@
             const container = document.getElementById('cards-container');
             
             try {
+                // Den Dateinamen 'daten.json' anpassen, falls deine JSON-Datei anders heißt!
                 const response = await fetch('daten.json');
                 if (!response.ok) throw new Error(`Fehler: ${response.status}`);
                 
@@ -156,8 +157,8 @@
                             const card = document.createElement('div');
                             card.className = 'card';
                             
-                            // Greift jetzt zu 100% lokal auf deine "auto.jpg" zu
-                            const bildPfad = `http://game.raceroom.com/store/image_redirect?id=${liveryId}&size=full`; 
+                            // EXAKTE URL MIT $ UND {LIVERY.ID} – PERFEKT FÜR GITHUB
+                            const bildPfad = `https://raceroom.com{livery.Id}&size=full`; 
                             
                             const klasseAnzeige = klassenNamen[car.Class] || `Klasse (ID ${car.Class})`;
                             
@@ -167,7 +168,7 @@
                             
                             card.innerHTML = `
                                 <div class="image-container">
-                                    <img src="${bildPfad}" alt="${fahrzeugName}">
+                                    <img src="${bildPfad}" alt="${fahrzeugName}" onerror="this.src='https://unsplash.com'">
                                 </div>
                                 <div class="card-content">
                                     <div>
