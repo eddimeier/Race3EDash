@@ -101,7 +101,6 @@
             margin-top: auto;
         }
 
-        /* Update für das Klassen-Tag: Macht Platz für das Logo */
         .klasse-tag {
             background-color: #34495e;
             color: #fff;
@@ -110,17 +109,6 @@
             font-size: 0.8em;
             font-weight: bold;
             letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            gap: 6px; /* Abstand zwischen Logo und Text */
-        }
-
-        /* Styling für das kleine Klassen-Logo */
-        .mini-class-logo {
-            height: 14px;
-            width: auto;
-            object-fit: contain;
-            filter: brightness(1) invert(1); /* Macht das Logo auf dunklem Grund weiß */
         }
 
         .livery-tag {
@@ -152,7 +140,7 @@
                 const data = await response.json();
                 container.innerHTML = ''; 
                 
-                // 1. Hier lesen wir die echten Klassennamen dynamisch aus deinem JSON aus
+                // 1. Liest die echten Klassennamen dynamisch aus dem Reiter "classes" deiner JSON
                 const klassenMapping = {};
                 const jsonKlassen = data.classes || data.Classes || {};
                 Object.values(jsonKlassen).forEach(cls => {
@@ -161,7 +149,7 @@
                     if (id && name) klassenMapping[id] = name;
                 });
 
-                // 2. Hier lesen wir die Hersteller aus, um "Aquila Aquila" Dopplungen zu vermeiden
+                // 2. Liest die Hersteller aus dem Reiter "manufactures" deiner JSON
                 const herstellerMapping = {};
                 const jsonHersteller = data.manufactures || data.manufacturers || {};
                 Object.values(jsonHersteller).forEach(man => {
@@ -175,7 +163,7 @@
                 alleAutos.forEach(car => {
                     if (!car || !car.liveries) return;
                     
-                    // Holt den echten Namen aus der JSON-Liste, Fallback ist die ID
+                    // DIE REPARATUR: Holt den Namen aus dem JSON-Mapping, Fallback ist die reine ID-Nummer
                     const klasseText = klassenMapping[car.Class] || "Klasse " + car.Class;
                     const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "";
                     
@@ -187,10 +175,7 @@
                             card.className = 'card';
                             
                             // Die funktionierende Bild-URL
-                            const bildPfad = "https://raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
-                            
-                            // Dynamische URL für das Klassenlogo direkt vom RaceRoom-Server
-                            const klasseLogoUrl = "https://raceroom.com/store/image_redirect?id=" + car.Class + "&size=small";
+                            const bildPfad = "https://raceroom.com" + livery.Id + "&size=small"; 
                             
                             // Saubere Zusammenführung des Autonamens
                             const fahrzeugName = (car.Name && car.Name.startsWith(herstellerText)) 
@@ -208,10 +193,7 @@
                                         <div class="car-name">🏎️ ${fahrzeugName}</div>
                                     </div>
                                     <div class="meta-container">
-                                        <span class="klasse-tag">
-                                            <img src="${klasseLogoUrl}" class="mini-class-logo" alt="">
-                                            ${klasseText}
-                                        </span>
+                                        <span class="klasse-tag">${klasseText}</span>
                                         <span class="livery-tag">Startnummer: ${livery.Name}</span>
                                     </div>
                                 </div>
