@@ -214,17 +214,22 @@
                 const data = await response.json();
                 container.innerHTML = ''; 
                 
-                // Klassenliste flexibel auslesen (erkennt "classes" und "Classes")
-                const klassenAusJson = {};
+                // 1. Klassenliste aus dem Hauptreiter "classes" mappen
+                const klassenMapping = {};
                 const jsonKlassen = data.classes || data.Classes || {};
-                
                 Object.values(jsonKlassen).forEach(cls => {
                     const id = cls.Id || cls.id;
-                    // Nimmt 'Name', sonst 'IdName', sonst 'name'
-                    const name = cls.Name || cls.IdName || cls.name; 
-                    if (id && name) {
-                        klassenAusJson[id] = name;
-                    }
+                    const name = cls.Name || cls.name || cls.IdName;
+                    if (id && name) klassenMapping[id] = name;
+                });
+                
+                // 2. Herstellerliste aus dem Hauptreiter "manufacturers" mappen
+                const herstellerMapping = {};
+                const jsonHersteller = data.manufacturers || data.Manufacturers || {};
+                Object.values(jsonHersteller).forEach(man => {
+                    const id = man.Id || man.id;
+                    const name = man.Name || man.name;
+                    if (id && name) herstellerMapping[id] = name;
                 });
                 
                 const alleAutos = Object.values(data.cars || {});
@@ -234,11 +239,12 @@
                 alleAutos.forEach(car => {
                     if (!car.liveries) return;
                     
-                    // Sucht den Klarnamen aus der extrahierten Liste, Fallback ist die ID-Nummer
-                    const klasseText = klassenAusJson[car.Class] || "Klasse (ID " + car.Class + ")";
+                    // Holt die echten Klarnamen über die IDs aus den oberen Listen
+                    const klasseText = klassenMapping[car.Class] || "Klasse " + car.Class;
+                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "Hersteller " + car.CarManufacturer;
                     
                     klassenSet.add(JSON.stringify({ id: car.Class, name: klasseText }));
-                    if (car.BrandName) herstellerSet.add(car.BrandName);
+                    herstellerSet.add(JSON.stringify({ id: car.CarManufacturer, name: herstellerText }));
                     
                     car.liveries.forEach(livery => {
                         if (!livery.drivers) return;
@@ -247,18 +253,20 @@
                             const card = document.createElement('div');
                             card.className = 'card';
                             
+                            // Die bewährte URL-Zusammensetzung
                             const bildPfad = "https://raceroom.com" + livery.Id + "&size=full"; 
                             
-                            const fahrzeugName = car.Name.startsWith(car.BrandName) 
+                            // Verhindert doppelte Namen wie "Aquila Aquila CR1"
+                            const fahrzeugName = car.Name.startsWith(herstellerText) 
                                 ? car.Name 
-                                : car.BrandName + " " + car.Name;
+                                : herstellerText + " " + car.Name;
                             
                             const fahrerVollname = driver.Forename + " " + driver.Surname;
                             const teamName = livery.TeamName || 'Privatfahrer';
                             
                             card.innerHTML = `
                                 <div class="image-container">
-                                    <img src="${bildPfad}" alt="${fahrzeugName}" onerror="this.src='https://unsplash.com'">
+                                    <img src="${bildPfad}" alt="${fahrzeugName}">
                                 </div>
                                 <div class="card-content">
                                     <div>
@@ -278,16 +286,7 @@
                             alleKartenDaten.push({
                                 element: card,
                                 klasseId: car.Class.toString(),
-                                hersteller: car.BrandName ? car.BrandName.toLowerCase() : ""
+                                herstellerId: car.CarManufacturer.toString()
                             });
                         });
                     });
-                });
-                
-                befuelleFilterMenues(klassenSet, herstellerSet);
-                
-                document.getElementById('filter-class').addEventListener('change', wendeFilterAn);
-                document.getElementById('filter-brand').addEventListener('change', wendeFilterAn);
-                
-            } catch (error) {
-                console.error("Fehler:", error);
