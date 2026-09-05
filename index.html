@@ -21,7 +21,6 @@
             letter-spacing: 2px;
         }
 
-        /* Styling für den Filterbereich */
         .filter-container {
             display: flex;
             flex-wrap: wrap;
@@ -51,7 +50,7 @@
             font-weight: bold;
         }
 
-        .filter-item input, .filter-item select {
+        .filter-item select {
             background: #1a1a1a;
             border: 1px solid #444;
             color: #fff;
@@ -60,13 +59,13 @@
             font-size: 1em;
             outline: none;
             transition: border-color 0.2s;
+            cursor: pointer;
         }
 
-        .filter-item input:focus, .filter-item select:focus {
+        .filter-item select:focus {
             border-color: #e74c3c;
         }
 
-        /* Grid-Layout für die Karten */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -88,7 +87,6 @@
             height: 100%;
         }
 
-        /* Klasse, die per JavaScript genutzt wird, um ausgefilterte Karten zu verstecken */
         .card.hidden {
             display: none !important;
         }
@@ -184,12 +182,7 @@
 
     <h1>RaceRoom Grid Dashboard</h1>
     
-    <!-- Filterbereich -->
     <div class="filter-container">
-        <div class="filter-item">
-            <label for="search-driver">Fahrer / Team suchen</label>
-            <input type="text" id="search-driver" placeholder="Name eingeben...">
-        </div>
         <div class="filter-item">
             <label for="filter-class">Klasse filtern</label>
             <select id="filter-class">
@@ -209,12 +202,6 @@
     </div>
 
     <script>
-        // Mapping für Klassen-IDs zu echten Namen
-        const klassenNamen = {
-            255: "Sports GT"
-        };
-
-        // Globale Liste, um die geladenen Kartenelemente für die Filterung zu speichern
         let alleKartenDaten = [];
 
         async function ladeFahrzeugDaten() {
@@ -227,17 +214,29 @@
                 const data = await response.json();
                 container.innerHTML = ''; 
                 
-                const alleAutos = Object.values(data.cars);
+                // Klassenliste flexibel auslesen (erkennt "classes" und "Classes")
+                const klassenAusJson = {};
+                const jsonKlassen = data.classes || data.Classes || {};
                 
-                // Sets, um Duplikate bei den Filtern automatisch zu verhindern
-                const klassenSet = new Set();
+                Object.values(jsonKlassen).forEach(cls => {
+                    const id = cls.Id || cls.id;
+                    // Nimmt 'Name', sonst 'IdName', sonst 'name'
+                    const name = cls.Name || cls.IdName || cls.name; 
+                    if (id && name) {
+                        klassenAusJson[id] = name;
+                    }
+                });
+                
+                const alleAutos = Object.values(data.cars || {});
                 const herstellerSet = new Set();
+                const klassenSet = new Set();
                 
                 alleAutos.forEach(car => {
                     if (!car.liveries) return;
                     
-                    // Werte für die Filterauswahl sammeln
-                    const klasseText = klassenNamen[car.Class] || "Klasse " + car.Class;
+                    // Sucht den Klarnamen aus der extrahierten Liste, Fallback ist die ID-Nummer
+                    const klasseText = klassenAusJson[car.Class] || "Klasse (ID " + car.Class + ")";
+                    
                     klassenSet.add(JSON.stringify({ id: car.Class, name: klasseText }));
                     if (car.BrandName) herstellerSet.add(car.BrandName);
                     
@@ -248,7 +247,6 @@
                             const card = document.createElement('div');
                             card.className = 'card';
                             
-                            // Die funktionierende URL-Zusammensetzung ohne Backticks
                             const bildPfad = "https://raceroom.com" + livery.Id + "&size=full"; 
                             
                             const fahrzeugName = car.Name.startsWith(car.BrandName) 
@@ -277,11 +275,8 @@
                             
                             container.appendChild(card);
                             
-                            // Wichtig für das Filtern: Daten im Speicher merken
                             alleKartenDaten.push({
                                 element: card,
-                                fahrer: fahrerVollname.toLowerCase(),
-                                team: teamName.toLowerCase(),
                                 klasseId: car.Class.toString(),
                                 hersteller: car.BrandName ? car.BrandName.toLowerCase() : ""
                             });
@@ -289,5 +284,10 @@
                     });
                 });
                 
-                // Filter-Menüs dynamisch befüllen
                 befuelleFilterMenues(klassenSet, herstellerSet);
+                
+                document.getElementById('filter-class').addEventListener('change', wendeFilterAn);
+                document.getElementById('filter-brand').addEventListener('change', wendeFilterAn);
+                
+            } catch (error) {
+                console.error("Fehler:", error);
