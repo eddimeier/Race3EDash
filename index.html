@@ -16,11 +16,57 @@
         h1 {
             text-align: center;
             color: #fff;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
+        /* Styling für den Filterbereich */
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 1400px;
+            margin: 0 auto 30px auto;
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #3a3a3a;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .filter-item {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .filter-item label {
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #95a5a6;
+            font-weight: bold;
+        }
+
+        .filter-item input, .filter-item select {
+            background: #1a1a1a;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .filter-item input:focus, .filter-item select:focus {
+            border-color: #e74c3c;
+        }
+
+        /* Grid-Layout für die Karten */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -40,6 +86,11 @@
             flex-direction: column;
             min-height: 400px;
             height: 100%;
+        }
+
+        /* Klasse, die per JavaScript genutzt wird, um ausgefilterte Karten zu verstecken */
+        .card.hidden {
+            display: none !important;
         }
 
         .card:hover {
@@ -119,26 +170,57 @@
             padding: 4px 8px;
             border-radius: 4px;
         }
+
+        #no-results {
+            text-align: center;
+            grid-column: 1 / -1;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #95a5a6;
+        }
     </style>
 </head>
 <body>
 
     <h1>RaceRoom Grid Dashboard</h1>
     
+    <!-- Filterbereich -->
+    <div class="filter-container">
+        <div class="filter-item">
+            <label for="search-driver">Fahrer / Team suchen</label>
+            <input type="text" id="search-driver" placeholder="Name eingeben...">
+        </div>
+        <div class="filter-item">
+            <label for="filter-class">Klasse filtern</label>
+            <select id="filter-class">
+                <option value="all">Alle Klassen</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="filter-brand">Manufaktur filtern</label>
+            <select id="filter-brand">
+                <option value="all">Alle Hersteller</option>
+            </select>
+        </div>
+    </div>
+    
     <div class="grid-container" id="cards-container">
         <p style="text-align: center; width: 100%;">Lade Fahrzeug- und Fahrerdaten aus der Simulation...</p>
     </div>
 
     <script>
+        // Mapping für Klassen-IDs zu echten Namen
         const klassenNamen = {
             255: "Sports GT"
         };
+
+        // Globale Liste, um die geladenen Kartenelemente für die Filterung zu speichern
+        let alleKartenDaten = [];
 
         async function ladeFahrzeugDaten() {
             const container = document.getElementById('cards-container');
             
             try {
-                // Den Dateinamen 'daten.json' anpassen, falls deine JSON-Datei anders heißt!
                 const response = await fetch('daten.json');
                 if (!response.ok) throw new Error(`Fehler: ${response.status}`);
                 
@@ -147,8 +229,17 @@
                 
                 const alleAutos = Object.values(data.cars);
                 
+                // Sets, um Duplikate bei den Filtern automatisch zu verhindern
+                const klassenSet = new Set();
+                const herstellerSet = new Set();
+                
                 alleAutos.forEach(car => {
                     if (!car.liveries) return;
+                    
+                    // Werte für die Filterauswahl sammeln
+                    const klasseText = klassenNamen[car.Class] || "Klasse " + car.Class;
+                    klassenSet.add(JSON.stringify({ id: car.Class, name: klasseText }));
+                    if (car.BrandName) herstellerSet.add(car.BrandName);
                     
                     car.liveries.forEach(livery => {
                         if (!livery.drivers) return;
@@ -157,44 +248,46 @@
                             const card = document.createElement('div');
                             card.className = 'card';
                             
-                            // EXAKTE URL MIT $ UND {LIVERY.ID} – PERFEKT FÜR GITHUB
-                           const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
-                            
-                            const klasseAnzeige = klassenNamen[car.Class] || `Klasse (ID ${car.Class})`;
+                            // Die funktionierende URL-Zusammensetzung ohne Backticks
+                            const bildPfad = "https://raceroom.com" + livery.Id + "&size=full"; 
                             
                             const fahrzeugName = car.Name.startsWith(car.BrandName) 
                                 ? car.Name 
-                                : `${car.BrandName} ${car.Name}`;
+                                : car.BrandName + " " + car.Name;
+                            
+                            const fahrerVollname = driver.Forename + " " + driver.Surname;
+                            const teamName = livery.TeamName || 'Privatfahrer';
                             
                             card.innerHTML = `
                                 <div class="image-container">
-                                    <img src="${bildPfad}" alt="${fahrzeugName}" onerror="this.src="https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small">
+                                    <img src="${bildPfad}" alt="${fahrzeugName}" onerror="this.src='https://unsplash.com'">
                                 </div>
                                 <div class="card-content">
                                     <div>
-                                        <h2 class="fahrer-name">${driver.Forename} ${driver.Surname}</h2>
-                                        <p class="team-name">${livery.TeamName || 'Privatfahrer'}</p>
+                                        <h2 class="fahrer-name">${fahrerVollname}</h2>
+                                        <p class="team-name">${teamName}</p>
                                         <div class="car-name">🏎️ ${fahrzeugName}</div>
                                     </div>
                                     <div class="meta-container">
-                                        <span class="klasse-tag">${klasseAnzeige}</span>
+                                        <span class="klasse-tag">${klasseText}</span>
                                         <span class="livery-tag">Startnummer: ${livery.Name}</span>
                                     </div>
                                 </div>
                             `;
                             
                             container.appendChild(card);
+                            
+                            // Wichtig für das Filtern: Daten im Speicher merken
+                            alleKartenDaten.push({
+                                element: card,
+                                fahrer: fahrerVollname.toLowerCase(),
+                                team: teamName.toLowerCase(),
+                                klasseId: car.Class.toString(),
+                                hersteller: car.BrandName ? car.BrandName.toLowerCase() : ""
+                            });
                         });
                     });
                 });
                 
-            } catch (error) {
-                console.error("Fehler:", error);
-                container.innerHTML = `<p style="color: #e74c3c; text-align: center; width: 100%;">Fehler beim Laden der Live-Daten.</p>`;
-            }
-        }
-
-        window.addEventListener('DOMContentLoaded', ladeFahrzeugDaten);
-    </script>
-</body>
-</html>
+                // Filter-Menüs dynamisch befüllen
+                befuelleFilterMenues(klassenSet, herstellerSet);
