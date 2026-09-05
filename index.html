@@ -21,6 +21,7 @@
             letter-spacing: 2px;
         }
 
+        /* Filterbox nahtlos integriert */
         .filter-container {
             display: flex;
             flex-wrap: wrap;
@@ -87,6 +88,7 @@
             height: 100%;
         }
 
+        /* Versteckt Karten, die nicht zum Filter passen */
         .card.hidden {
             display: none !important;
         }
@@ -182,6 +184,7 @@
 
     <h1>RaceRoom Grid Dashboard</h1>
     
+    <!-- Filterauswahl über den Karten -->
     <div class="filter-container">
         <div class="filter-item">
             <label for="filter-class">Klasse filtern</label>
@@ -202,6 +205,7 @@
     </div>
 
     <script>
+        // Dieses Array merkt sich alle geladenen Karten für die Filterung
         let alleKartenDaten = [];
 
         async function ladeFahrzeugDaten() {
@@ -214,7 +218,7 @@
                 const data = await response.json();
                 container.innerHTML = ''; 
                 
-                // 1. Klassenliste aus dem Hauptreiter "classes" mappen
+                // 1. Hier lesen wir die echten Klassennamen dynamisch aus deinem JSON aus
                 const klassenMapping = {};
                 const jsonKlassen = data.classes || data.Classes || {};
                 Object.values(jsonKlassen).forEach(cls => {
@@ -222,10 +226,10 @@
                     const name = cls.Name || cls.name || cls.IdName;
                     if (id && name) klassenMapping[id] = name;
                 });
-                
-                // 2. Herstellerliste aus dem Hauptreiter "manufacturers" mappen
+
+                // 2. Hier lesen wir die Hersteller aus, um "Aquila Aquila" Dopplungen zu vermeiden
                 const herstellerMapping = {};
-                const jsonHersteller = data.manufacturers || data.Manufacturers || {};
+                const jsonHersteller = data.manufactures || data.manufacturers || {};
                 Object.values(jsonHersteller).forEach(man => {
                     const id = man.Id || man.id;
                     const name = man.Name || man.name;
@@ -233,36 +237,36 @@
                 });
                 
                 const alleAutos = Object.values(data.cars || {});
-                const herstellerSet = new Set();
-                const klassenSet = new Set();
+                
+                // Speicherboxen, um Duplikate in den Listen zu verhindern
+                const verfuegbareKlassen = new Set();
+                const verfuegbareHersteller = new Set();
                 
                 alleAutos.forEach(car => {
-                    if (!car.liveries) return;
+                    if (!car || !car.liveries) return;
                     
-                    // Holt die echten Klarnamen über die IDs aus den oberen Listen
+                    // Holt den echten Namen aus der JSON-Liste, Fallback ist die ID
                     const klasseText = klassenMapping[car.Class] || "Klasse " + car.Class;
-                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "Hersteller " + car.CarManufacturer;
+                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "Unbekannt";
                     
-                    klassenSet.add(JSON.stringify({ id: car.Class, name: klasseText }));
-                    herstellerSet.add(JSON.stringify({ id: car.CarManufacturer, name: herstellerText }));
+                    // Werte für die Menüs sammeln
+                    verfuegbareKlassen.add(klasseText);
+                    verfuegbareHersteller.add(herstellerText);
                     
                     car.liveries.forEach(livery => {
-                        if (!livery.drivers) return;
+                        if (!livery || !livery.drivers) return;
                         
                         livery.drivers.forEach(driver => {
                             const card = document.createElement('div');
                             card.className = 'card';
                             
-                            // Die bewährte URL-Zusammensetzung
-                            const bildPfad = "https://raceroom.com" + livery.Id + "&size=full"; 
+                            // Die funktionierende Bild-URL
+                            const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
                             
-                            // Verhindert doppelte Namen wie "Aquila Aquila CR1"
-                            const fahrzeugName = car.Name.startsWith(herstellerText) 
+                            // Saubere Zusammenführung des Autonamens
+                            const fahrzeugName = (car.Name && car.Name.startsWith(herstellerText)) 
                                 ? car.Name 
-                                : herstellerText + " " + car.Name;
-                            
-                            const fahrerVollname = driver.Forename + " " + driver.Surname;
-                            const teamName = livery.TeamName || 'Privatfahrer';
+                                : herstellerText + " " + (car.Name || "");
                             
                             card.innerHTML = `
                                 <div class="image-container">
@@ -270,8 +274,8 @@
                                 </div>
                                 <div class="card-content">
                                     <div>
-                                        <h2 class="fahrer-name">${fahrerVollname}</h2>
-                                        <p class="team-name">${teamName}</p>
+                                        <h2 class="fahrer-name">${driver.Forename} ${driver.Surname}</h2>
+                                        <p class="team-name">${livery.TeamName || 'Privatfahrer'}</p>
                                         <div class="car-name">🏎️ ${fahrzeugName}</div>
                                     </div>
                                     <div class="meta-container">
@@ -282,11 +286,7 @@
                             `;
                             
                             container.appendChild(card);
-                            
+
+                            // Karte im Filter-Speicher registrieren
                             alleKartenDaten.push({
                                 element: card,
-                                klasseId: car.Class.toString(),
-                                herstellerId: car.CarManufacturer.toString()
-                            });
-                        });
-                    });
