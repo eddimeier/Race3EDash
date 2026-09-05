@@ -130,41 +130,55 @@
     </div>
 
     <script>
-        const klassenNamen = {
-            255: "Sports GT"
-        };
-
         async function ladeFahrzeugDaten() {
             const container = document.getElementById('cards-container');
             
             try {
-                // Den Dateinamen 'daten.json' anpassen, falls deine JSON-Datei anders heißt!
                 const response = await fetch('daten.json');
                 if (!response.ok) throw new Error(`Fehler: ${response.status}`);
                 
                 const data = await response.json();
                 container.innerHTML = ''; 
                 
-                const alleAutos = Object.values(data.cars);
+                // 1. Auslesen der echten Klassennamen direkt aus dem "classes"-Reiter deiner JSON-Datei
+                const klassenMapping = {};
+                const jsonKlassen = data.classes || data.Classes || {};
+                Object.values(jsonKlassen).forEach(cls => {
+                    const id = cls.Id || cls.id;
+                    const name = cls.Name || cls.name || cls.IdName;
+                    if (id && name) klassenMapping[id] = name;
+                });
+
+                // 2. Auslesen der Herstellernamen aus dem "manufactures"-Reiter deiner JSON-Datei
+                const herstellerMapping = {};
+                const jsonHersteller = data.manufactures || data.manufacturers || {};
+                Object.values(jsonHersteller).forEach(man => {
+                    const id = man.Id || man.id;
+                    const name = man.Name || man.name;
+                    if (id && name) herstellerMapping[id] = name;
+                });
+                
+                const alleAutos = Object.values(data.cars || {});
                 
                 alleAutos.forEach(car => {
-                    if (!car.liveries) return;
+                    if (!car || !car.liveries) return;
+                    
+                    // Holt den echten Namen aus der Liste. Wenn nicht vorhanden, schreibt er "Klasse [ID]"
+                    const klasseAnzeige = klassenMapping[car.Class] || "Klasse " + car.Class;
+                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "";
                     
                     car.liveries.forEach(livery => {
-                        if (!livery.drivers) return;
+                        if (!livery || !livery.drivers) return;
                         
                         livery.drivers.forEach(driver => {
                             const card = document.createElement('div');
                             card.className = 'card';
                             
-                            // EXAKTE URL MIT $ UND {LIVERY.ID} – PERFEKT FÜR GITHUB
                             const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
                             
-                            const klasseAnzeige = klassenNamen[car.Class] || `Klasse (ID ${car.Class})`;
-                            
-                            const fahrzeugName = car.Name.startsWith(car.BrandName) 
+                            const fahrzeugName = car.Name.startsWith(herstellerText) 
                                 ? car.Name 
-                                : `${car.BrandName} ${car.Name}`;
+                                : herstellerText + " " + car.Name;
                             
                             card.innerHTML = `
                                 <div class="image-container">
