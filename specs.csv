@@ -6,7 +6,7 @@ ID,Nation,Baujahr,Leistung,Gewicht,Motor,Antrieb,Index
 ,,,,,,,
 ,,,,,,,#N/A
 Grand Prix,France,,38,"3,793",Europe,,TC
-Bridge,France,,38,"3,84",Europe,,TC
+Bridge,France,,38,"3,840",Europe,,TC
 Classic,France,,38,"3,628",Europe,,TC
 Classic Sprint,France,,38,"3,356",Europe,,TC
 National,France,,38,"3,604",Europe,,TC
@@ -1417,14 +1417,14 @@ Grand Prix,Italy,,58,"5,793",Europe,,TC
 Junior,Italy,,58,"2,405",Europe,,TC
 ,,,,,,,#N/A
 Full,US,,52,"3,823",America,,TC
-Chicane,US,,52,"2,88",America,,TC
+Chicane,US,,52,"2,880",America,,TC
 Short,US,,52,"3,862",America,,TC
 ,,,,,,,#N/A
 Grand Prix,Netherlands,,32,"4,307",Europe,,TC
-National,Netherlands,,32,"2,51",Europe,,TC
+National,Netherlands,,32,"2,510",Europe,,TC
 Club,Netherlands,,32,"2,887",Europe,,TC
 ,,,,,,,#N/A
-Full Run,Sweden,,1,"10,3",Europe,,TC
+Full Run,Sweden,,1,"10,300",Europe,,TC
 ,,,,,,,#N/A
 Grand Prix,Belgium,,38,"4,011",Europe,,TC
 ,,,,,,,55
@@ -1923,7 +1923,7 @@ Grand Prix,Macau,,41,"6,115",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-Reverse,Sweden,,1,"10,3",Europe,,TC
+Reverse,Sweden,,1,"10,300",Europe,,TC
 ,,,,,,,
 1797,United Kingdom,2007,600+,1490,V8,RWD,175
 ,,,,,,,
@@ -2260,7 +2260,7 @@ Sprint,Russian Federation,,36,"2,555",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-Grand Prix,Germany,,36,"2,3",Europe,,TC
+Grand Prix,Germany,,36,"2,300",Europe,,TC
 ,,,,,,,
 Indy,UK,,34,"1,929",Europe,,TC
 ,,,,,,,
@@ -2555,7 +2555,7 @@ Grand Prix Circuit,Austria,,36,"4,326",Europe,,TC
 2804,Germany,2013,310,1150,Inline-4,FWD,145
 2804,Germany,2013,310,1150,Inline-4,FWD,145
 ,,,,,,,
-Nordschleife,Germany,,32,"20,83",Europe,,TC
+Nordschleife,Germany,,32,"20,830",Europe,,TC
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -3033,7 +3033,7 @@ Solution 3C,France,,44,"3,841",Europe,,TC
 2339,Germany,1979,470BHP,1130Kg,3.5L straight-6,RWD,197
 2339,Germany,1979,470BHP,1130Kg,3.5L straight-6,RWD,197
 2339,Germany,1979,470BHP,1130Kg,3.5L straight-6,RWD,197
-Short Course,Germany,,36,"3,41",Europe,,TC
+Short Course,Germany,,36,"3,410",Europe,,TC
 ,,,,,,,
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -3781,7 +3781,7 @@ IRL,US,,52,"1,843",America,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-Grand Prix,UK,,52,"5,89",Europe,,TC
+Grand Prix,UK,,52,"5,890",Europe,,TC
 ,,,,,,,
 Intermediate (WTCC),China,,48,"4,603",Asia,,TC
 West Long,China,,48,"3,067",Asia,,TC
@@ -4835,7 +4835,7 @@ NLS,Germany,,100,"24,433",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-Tourist,Germany,,48,"19,17",Europe,,TC
+Tourist,Germany,,48,"19,170",Europe,,TC
 ,,,,,,,#N/A
 24 Hours,Germany,,100,"25,378",Europe,,TC
 ,,,,,,,
@@ -5667,7 +5667,7 @@ Historic Grand Prix,UK,,50,"5,892",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-Grand Prix Circuit,Sweden,,36,"2,53",Europe,,TC
+Grand Prix Circuit,Sweden,,36,"2,530",Europe,,TC
 5818,Germany,2016,590BHP,1395kg with driver,4.4L V8,RWD,80
 5818,Germany,2016,590BHP,1395kg with driver,4.4L V8,RWD,80
 5818,Germany,2016,590BHP,1395kg with driver,4.4L V8,RWD,80
@@ -5752,7 +5752,7 @@ Grand Prix Circuit,Sweden,,36,"2,53",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-Long Circuit,Sweden,,36,3,Europe,,#N/A
+Long Circuit,Sweden,,36,"3,000",Europe,,#N/A
 6011,United States,2014,380,1100,Inline-4,FWD,120
 ,,,,,,,#N/A
 6011,United States,2014,380,1100,Inline-4,FWD,120
@@ -5906,10 +5906,10 @@ Grand Prix,Sweden,,36,1.843,Europe,,TC
 5767,Austria,2015,353BHP,1300Kg,L4,RWD,165
 5767,Austria,2015,353BHP,1300Kg,L4,RWD,165
 5767,Austria,2015,353BHP,1300Kg,L4,RWD,165
-South,Sweden,,32,2,Europe,,TC
+South,Sweden,,32,"2,000",Europe,,TC
 ,,,,,,,
 Grand Prix Course,Germany,,36,"4,345",Europe,,TC
-Short Circuit,Sweden,,36,"2,4",Europe,,TC
+Short Circuit,Sweden,,36,"2,400",Europe,,TC
 6168,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
 ,,,,,,,#N/A
 6168,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
@@ -6329,7 +6329,7 @@ South,Malaysia,,34,"2,609",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,#N/A
-Grand Prix Circuit,United Arab Emirates,,74,"5,39",Asia,,TC
+Grand Prix Circuit,United Arab Emirates,,74,"5,390",Asia,,TC
 6588,,,,,,,160
 ,,,,,,,#N/A
 6588,,,,,,,160
@@ -6400,7 +6400,7 @@ Grand Prix Circuit,United Arab Emirates,,74,"5,39",Asia,,TC
 6349,Germany,2017,555BHP,1305kg with driver,4.0L F6,RWD,80
 6349,Germany,2017,555BHP,1305kg with driver,4.0L F6,RWD,80
 ,,,,,,,#N/A
-Road Course,Japan,,42,"4,8",Asia,,TC
+Road Course,Japan,,42,"4,800",Asia,,TC
 ,,,,,,,
 4675,Germany,2017,485 bhp @ 7500rpm,1205 kg,4.0l Flat-6,RWD,105
 4675,Germany,2017,485 bhp @ 7500rpm,1205 kg,4.0l Flat-6,RWD,105
@@ -6768,8 +6768,8 @@ Road Course,Japan,,42,"4,8",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-West Course,Japan,,42,"1,4",Asia,,TC
-East Course,Japan,,42,"3,4",Asia,,TC
+West Course,Japan,,42,"1,400",Asia,,TC
+East Course,Japan,,42,"3,400",Asia,,TC
 ,,,,,,,
 7029,Italy,2018,330,1285 Kg,L4,FWD,160
 ,,,,,,,#N/A
@@ -7497,7 +7497,7 @@ Full circuit,China,,32,"4,015",Asia,,TC
 ,,,,,,,
 B Course,Germany,,36,"2,603",Europe,,TC
 Motorcycle A Course,Germany,,36,"3,668",Europe,,TC
-Motorcycle B Course,Germany,,36,"2,6",Europe,,TC
+Motorcycle B Course,Germany,,36,"2,600",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,5
@@ -7718,9 +7718,9 @@ Gesamtstrecke,Germany,,40,"4,274",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-Club Circuit,United Arab Emirates,,36,"2,46",Asia,,TC
-National Circuit,United Arab Emirates,,36,"3,56",Asia,,TC
-International Circuit,United Arab Emirates,,36,"4,29",Asia,,TC
+Club Circuit,United Arab Emirates,,36,"2,460",Asia,,TC
+National Circuit,United Arab Emirates,,36,"3,560",Asia,,TC
+International Circuit,United Arab Emirates,,36,"4,290",Asia,,TC
 6623,Germany,2017,385 BHP @ 7500 RPM,1300Kg,3.8l flat 6,RWD,165
 6623,Germany,2017,385 BHP @ 7500 RPM,1300Kg,3.8l flat 6,RWD,165
 ,,,,,,,#N/A
@@ -7811,13 +7811,13 @@ International Circuit,United Arab Emirates,,36,"4,29",Asia,,TC
 7983,Germany,2017,485 BHP @ 7500rpm,1205 Kg,4.0l flat-6,RWD,110
 ,,,,,,,
 ,,,,,,,
-Gesamtstrecke Schikane,Germany,,40,"4,3",Europe,,TC
-Ostschleife,Germany,,32,"2,4",Europe,,TC
+Gesamtstrecke Schikane,Germany,,40,"4,300",Europe,,TC
+Ostschleife,Germany,,32,"2,400",Europe,,TC
 Ostschleife Schikane,Germany,,32,"2,425",Europe,,TC
 7983,Germany,2017,485 BHP @ 7500rpm,1205 Kg,4.0l flat-6,RWD,110
 7983,Germany,2017,485 BHP @ 7500rpm,1205 Kg,4.0l flat-6,RWD,110
 ,,,,,,,#N/A
-Grand Prix,China,,30,"3,2",Asia,,TC
+Grand Prix,China,,30,"3,200",Asia,,TC
 8006,Spain,2019,340 BHP,1305kg with driver,2.0L in-line 4,FWD,160
 ,,,,,,,
 ,,,,,,,
@@ -8053,7 +8053,7 @@ Westschleife,Germany,,24,"1,845",Europe,,TC
 ,,,,,,,
 Full circuit no chicane,China,,32,"3,962",Asia,,TC
 Intermediate circuit,China,,32,"3,537",Asia,,TC
-Intermediate circuit no chicane,China,,32,"3,5",Asia,,TC
+Intermediate circuit no chicane,China,,32,"3,500",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 Short circuit,China,,32,"1,862",Asia,,#N/A
@@ -8069,7 +8069,7 @@ Short circuit,China,,32,"1,862",Asia,,#N/A
 8257,Germany,2019,570BHP,1345kg with driver,4.0L Flat-6,RWD,80
 ,,,,,,,
 ,,,,,,,
-East circuit,China,,30,"1,54",Asia,,TC
+East circuit,China,,30,"1,540",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -8397,7 +8397,7 @@ Speedway (Not Supported),US,,80,"4,023",America,,TC
 8652,Germany,2019,635BHP,1435kg with driver,5.2L V10,RWD,85
 ,,,,,,,#N/A
 8652,Germany,2019,635BHP,1435kg with driver,5.2L V10,RWD,85
-Road Course Motorcycle (2006),US,,80,"5,64",America,,TC
+Road Course Motorcycle (2006),US,,80,"5,640",America,,TC
 ,,,,,,,160
 ,Germany,2019,340 bhp,1315kg with driver,2.0L in-line 4,FWD,160
 ,,,,,,,#N/A
@@ -9207,7 +9207,7 @@ Circuit,Malaysia,,39,"9,999",Asia,,TC
 8053,Germany,2017,430BHP,1570kg with driver,3.0L straight-6,RWD,165
 ,,,,,,,
 ,,,,,,,#N/A
-Full Circuit,Norway,,35,"2,3",Europe,,TC
+Full Circuit,Norway,,35,"2,300",Europe,,TC
 ,,,,,,,#N/A
 9467,France,2020,340HP,1295kg with driver,1.8L in-line 4,FWD,160
 ,,,,,,,#N/A
@@ -9581,7 +9581,7 @@ Grand Prix (Short Pit Entry),Czech Republic,,47,"5,403",Europe,,TC
 ,,,,,,,5
 ,,,,,,,
 ,,,,,,,
-Duel,UK,,2,"1,5",Europe,,TC
+Duel,UK,,2,"1,500",Europe,,TC
 8257,Germany,2019,570BHP,1345kg with driver,4.0L Flat-6,RWD,80
 9575,United Kingdom,2021,575 BHP,1390kg with driver,4.0L V8,RWD,80
 8053,Germany,2017,430BHP,1570kg with driver,3.0L straight-6,RWD,165
@@ -10136,7 +10136,7 @@ Motorcycle Course,Netherlands,,33,"4,542",Europe,,TC
 ,,,,,,,
 Caupenne Circuit,France,,36,"1,576",Europe,,TC
 ,,,,,,,
-Grand Prix,UK,,35,"4,02",Europe,,TC
+Grand Prix,UK,,35,"4,020",Europe,,TC
 ,,,,,,,#N/A
 ,,,,,,,80
 10397,Südkorea,2020,340BHP,1365kg with driver,2.0L in-line 4,FWD,160
@@ -10646,7 +10646,7 @@ Grand Prix,Netherlands,,38,"4,259",Europe,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
-Grand Prix,France,,35,"4,05",Europe,,TC
+Grand Prix,France,,35,"4,050",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -11647,10 +11647,10 @@ Short Stage,Malaysia,,10,"5,2",Asia,,TC
 ,,,,,,,
 11285,Irland,1966,185BHP,590kg with driver,4-cylinder 2.0L,RWD,195
 ,,,,,,,
-Grand Prix,France,,34,"2,76",Europe,,TC
+Grand Prix,France,,34,"2,760",Europe,,TC
 ,,,,,,,
 ,,,,,,,
-Classic Racing School,France,,35,"4,05",Europe,,TC
+Classic Racing School,France,,35,"4,050",Europe,,TC
 Solution 1A,France,,44,"5,752",Europe,,TC
 11536,Germany,2021,545BHP,1385kg with driver,3.0l L6,RWD,80
 11536,Germany,2021,545BHP,1385kg with driver,3.0l L6,RWD,80
@@ -12137,7 +12137,7 @@ Short,UK,,56,"3,619",Europe,,TC
 10599,Germany,2021,450BHP,1620kg with driver,3L-Inline6,RWD,186
 ,,,,,,,
 ,,,,,,,
-Full Circuit,Germany,,36,"2,72",Europe,,TC
+Full Circuit,Germany,,36,"2,720",Europe,,TC
 ,,,,,,,
 ,,,,,,,#N/A
 10599,Germany,2021,450BHP,1620kg with driver,3L-Inline6,RWD,186
@@ -12162,7 +12162,7 @@ Full Circuit,Germany,,36,"2,72",Europe,,TC
 10599,Germany,2021,450BHP,1620kg with driver,3L-Inline6,RWD,186
 ,,,,,,,
 ,,,,,,,
-1998,Germany,,36,"2,66",Europe,,#N/A
+1998,Germany,,36,"2,660",Europe,,#N/A
 12421,Italy,2022,545BHP,1390kg with driver,2.9L V6,RWD,80
 ,,,,,,,#N/A
 12421,Italy,2022,545BHP,1390kg with driver,2.9L V6,RWD,80
@@ -12314,7 +12314,7 @@ Grand Prix,Germany,,36,"3,668",Europe,,TC
 12405,Italy,2022,545BHP,1390kg with driver,2.9L V6,RWD,80
 ,,,,,,,#N/A
 Alternate,Germany,,36,"3,696",Europe,,TC
-Short,Germany,,36,"2,6",Europe,,TC
+Short,Germany,,36,"2,600",Europe,,TC
 Moto Circuit,France,,36,"1,576",Europe,,TC
 ,,,,,,,
 ,,,,,,,
@@ -12791,9 +12791,9 @@ Full Circuit,Germany,,36,"2,784",Europe,,#N/A
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,#N/A
-13049,Italy,1998,300BHP,1055 with Driver,2-Litre 4-Cylinder,,161
+13049,Italy,1998,300BHP,1055 with Driver,2-Litre 4-Cylinder,FWD,161
 ,,,,,,,#N/A
-13049,Italy,1998,300BHP,1056 with Driver,2-Litre 4-Cylinder,,161
+13049,Italy,1998,300BHP,1056 with Driver,2-Litre 4-Cylinder,FWD,161
 12771,Italy,2023,570BHP,1380kg with driver,5.2L V10,RWD,80
 ,,,,,,,#N/A
 12771,Italy,2023,570BHP,1380kg with driver,5.2L V10,RWD,80
@@ -12822,21 +12822,21 @@ Full Circuit,Germany,,36,"2,784",Europe,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
-13049,Italy,1998,300BHP,1057 with Driver,2-Litre 4-Cylinder,,161
-13049,Italy,1998,300BHP,1058 with Driver,2-Litre 4-Cylinder,,161
+13049,Italy,1998,300BHP,1057 with Driver,2-Litre 4-Cylinder,FWD,161
+13049,Italy,1998,300BHP,1058 with Driver,2-Litre 4-Cylinder,FWD,161
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
-13049,Italy,1998,300BHP,1059 with Driver,2-Litre 4-Cylinder,,161
-13049,Italy,1998,300BHP,1060 with Driver,2-Litre 4-Cylinder,,161
+13049,Italy,1998,300BHP,1059 with Driver,2-Litre 4-Cylinder,FWD,161
+13049,Italy,1998,300BHP,1060 with Driver,2-Litre 4-Cylinder,FWD,161
 ,,,,,,,
 ,,,,,,,#N/A
 12771,Italy,2023,570BHP,1380kg with driver,5.2L V10,RWD,80
 ,,,,,,,#N/A
-13049,Italy,1998,300BHP,1061 with Driver,2-Litre 4-Cylinder,,161
+13049,Italy,1998,300BHP,1061 with Driver,2-Litre 4-Cylinder,FWD,161
 ,,,,,,,#N/A
-13049,Italy,1998,300BHP,1062 with Driver,2-Litre 4-Cylinder,,161
-13049,Italy,1998,300BHP,1063 with Driver,2-Litre 4-Cylinder,,161
+13049,Italy,1998,300BHP,1062 with Driver,2-Litre 4-Cylinder,FWD,161
+13049,Italy,1998,300BHP,1063 with Driver,2-Litre 4-Cylinder,FWD,161
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -12941,7 +12941,7 @@ International,Italy,,37,4.085 km,Europe,,TC
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 13160,Italy,2023,570BHP,1380kg with driver,5.2L V10,RWD,80
-13137,Italy,,,,,,29
+13137,Italy,2025,671BHP,1116kg with driver,3.8L V8,RWD,29
 13160,Italy,2023,570BHP,1380kg with driver,5.2L V10,RWD,80
 13164,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
 ,,,,,,,#N/A
@@ -12949,31 +12949,31 @@ International,Italy,,37,4.085 km,Europe,,TC
 12090,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
 ,,,,,,,
 ,,,,,,,#N/A
-13126,Germany,,,,,,29
-13126,Germany,,,,,,29
+13126,Germany,2025,671BHP,1116kg with driver,4.0L V8,RWD,29
+13126,Germany,2025,671BHP,1116kg with driver,4.0L V8,RWD,29
 ,,,,,,,#N/A
-13137,Italy,,,,,,29
-13137,Italy,,,,,,29
+13137,Italy,2025,671BHP,1116kg with driver,3.8L V8,RWD,29
+13137,Italy,2025,671BHP,1116kg with driver,3.8L V8,RWD,29
 12090,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
-13169,Germany,,,,,,29
-13169,Germany,,,,,,29
-13169,Germany,,,,,,29
-13169,Germany,,,,,,29
-13169,Germany,,,,,,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,
-13169,Germany,,,,,,29
-13169,Germany,,,,,,29
-13169,Germany,,,,,,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
 ,,,,,,,#N/A
-13126,Germany,,,,,,29
+13126,Germany,2025,671BHP,1116kg with driver,4.0L V8,RWD,29
 ,,,,,,,#N/A
-13169,Germany,,,,,,29
-13126,Germany,,,,,,29
+13169,Germany,2025,671BHP,1116kg with driver,4.6L V8,RWD,29
+13126,Germany,2025,671BHP,1116kg with driver,4.0L V8,RWD,29
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -12983,7 +12983,7 @@ International,Italy,,37,4.085 km,Europe,,TC
 13183,France,1998,298BHP,1080Kg with Driver,2.0L 4-Cylinder,FWD,161
 ,,,,,,,
 ,,,,,,,#N/A
-13137,Italy,,,,,,29
+13137,Italy,2025,671BHP,1116kg with driver,3.8L V8,RWD,29
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 13183,France,1998,298BHP,1080Kg with Driver,2.0L 4-Cylinder,FWD,161
@@ -13083,8 +13083,8 @@ Grand Prix,Belgium,,56,7.004 km,Europe,,TC
 Short,Italy,,37,1.684 km,Europe,,#N/A
 Chicane,Italy,,37,3.213 km,Europe,,#N/A
 Classic,Italy,,37,3.226 km,Europe,,#N/A
-13323,Germany,2002,,,4L-V8,RWD,51
-13323,Germany,2002,,,4L-V8,RWD,51
+13323,Germany,2002,462BHP bei 6750U/min,1080 kg,4L-V8,RWD,51
+13323,Germany,2002,462BHP bei 6750U/min,1080 kg,4L-V8,RWD,51
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -13094,2908 +13094,309 @@ Classic,Italy,,37,3.226 km,Europe,,#N/A
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-"Full Circuit	Italy		36	2.702 km	Europe		TC		
-							#N/A		
-10018							4		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-							#N/A		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-									
-									
-									
-Classic	Belgium		56	7.004 km	Europe		TC		
-Combined	Belgium		100	7.004 km	Europe		TC		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder	RWD			
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-									
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-									
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-									
-									
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-									
-									
-									
-Full Circuit	Italy		36	3,745 km	Europe		TC		
-									
-									
-									
-12012	Germany	2021	503 bhp @ 8400rpm	1260 Kg	4.0l flat-6	RWD	104		
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-Moto	Belgium		56	7004	Europe		TC		
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-									
-13394	France	2025	280HP	1135kg with driver	1.8L 4-cylinder				
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-									
-									
-									
-									
-									
-									
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-									
-									
-									
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-									
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-									
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-									
-									
-									
-12090	Germany	2022	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-							#N/A		
-13398	France	2025	341 HP	1255kg including driver	1.8L 4-cylinder		165		
-							#N/A		
-									
-									
-									
-13524	Germany	2022	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-							#N/A		
-13524	Germany	2022	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-13355	Sweden	2023	226HP	1233kg with driver	Electric		211		
-									
-							#N/A		
-12012	Germany	2021	503 bhp @ 8400rpm	1260 Kg	4.0l flat-6	RWD	104		
-									
-									
-									
-									
-									
-							#N/A		
-6168	Germany	2019	585 BHP	1390kg with driver	6.3L V8	RWD	80		
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-							#N/A		
-1741	Sweden	2010	415	1035	Inline-5	RWD	170		
-1741	Sweden	2010	415	1035	Inline-5	RWD	170		
-1741	Sweden	2010	415	1035	Inline-5	RWD	170		
-1741	Sweden	2010	415	1035	Inline-5	RWD	170		
-1741	Sweden	2010	415	1035	Inline-5	RWD	170		
-1741	Sweden	2010	415	1035	Inline-5	RWD	170		
-									
-									
-									
-							#N/A		
-							#N/A		
-13524	Germany	2022	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-13524	Germany	2022	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-									
-							#N/A		
-							#N/A		
-13524	Germany	2022	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-									
-13572	Germany	2026	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-							#N/A		
-13572	Germany	2026	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-							#N/A		
-13524	Germany	2022	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-							#N/A		
-							#N/A		
-							#N/A		
-							#N/A		
-							#N/A		
-							#N/A		
-							#N/A		
-							#N/A		
-12771	Italy	2023	570BHP	1380kg with driver	5.2L V10	RWD	80		
-12771	Italy	2023	570BHP	1380kg with driver	5.2L V10	RWD	80		
-									
-									
-									
-									
-13591	United States	2026	550	1405kg with driver		RWD	80		
-							#N/A		
-13591	United States	2026	550	1405kg with driver		RWD	80		
-13594	Italy	2025	550	1405kg with driver	4.0L V8	RWD	80		
-							#N/A		
-13594	Italy	2025	550	1405kg with driver	4.0L V8	RWD	80		
-13597	Germany	2019	584 BHP	1390kg with driver	6.3L V8	RWD	80		
-							#N/A		
-13597	Germany	2019	585 BHP	1390kg with driver	6.3L V8	RWD	80		
-							#N/A		
-13572	Germany	2026	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-13572	Germany	2026	575HP	1385kg with driver	4.0l flat-6	RWD	80		
-13603	United Kingdom	2025	545hp	1390g with driver	4.0L V8	RWD	80		
-							#N/A		
-13603	United Kingdom	2025	545hp	1390g with driver	4.0L V8	RWD	80		
-									
-							#N/A		
-13597	Germany	2019	585 BHP	1390kg with driver	6.3L V8	RWD	80		
-13594	Italy	2025	550	1405kg with driver	4.0L V8	RWD	80		
-									
-							#N/A		
-13597	Germany	2019	585 BHP	1390kg with driver	6.3L V8	RWD	80		
-							#N/A		
-13594	Italy	2025	550	1405kg with driver	4.0L V8	RWD	80		
-13594	Italy	2025	550	1405kg with driver	4.0L V8	RWD	80		
-13597	Germany	2019	585 BHP	1390kg with driver	6.3L V8	RWD	80		
-13617	Germany	2025	545bhp	1390Kg with driver	3.0l L6	RWD	80		
-							#N/A		
-13617	Germany	2025	545bhp	1390Kg with driver	3.0l L6	RWD	80		
-13620	United Kingdom	2021	575 BHP	1390kg with driver	4.0L V8	RWD	80		
-							#N/A		
-13620	United Kingdom	2021	575 BHP	1390kg with driver	4.0L V8	RWD	80		
-13617	Germany	2025	545bhp	1390Kg with driver	3.0l L6	RWD	80		
-13603	United Kingdom	2025	545hp	1390g with driver	4.0L V8	RWD	80		
-									
-13591	United States	2026	550	1405kg with driver		RWD	80		
-13620	United Kingdom	2021	575 BHP	1390kg with driver	4.0L V8	RWD	80		
-									
-									
-									
-									
-									
-							#N/A		
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-258	Germany	2013	570 BHP	860 KG	3,4L V8	RWD	55		
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									",,,,,,,
+"""Full Circuit",Italy,,36,2.702 km,Europe,,TC
+,,,,,,,#N/A
+10018,,,,,,,4
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,#N/A
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Classic,Belgium,,56,7.004 km,Europe,,TC
+Combined,Belgium,,100,7.004 km,Europe,,TC
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Full Circuit,Italy,,36,"3,745 km",Europe,,TC
+,,,,,,,
+,,,,,,,
+,,,,,,,
+12012,Germany,2021,503 bhp @ 8400rpm,1260 Kg,4.0l flat-6,RWD,104
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+Moto,Belgium,,56,7004,Europe,,TC
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+,,,,,,,
+13394,France,2025,280HP,1135kg with driver,1.8L 4-cylinder,RWD,166
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,,165
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,
+,,,,,,,
+,,,,,,,
+12090,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
+,,,,,,,#N/A
+13398,France,2025,341 HP,1255kg including driver,1.8L 4-cylinder,RWD,165
+,,,,,,,#N/A
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13524,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
+,,,,,,,#N/A
+13524,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+13355,Sweden,2023,226HP,1233kg with driver,Electric,,211
+,,,,,,,
+,,,,,,,#N/A
+12012,Germany,2021,503 bhp @ 8400rpm,1260 Kg,4.0l flat-6,RWD,104
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,#N/A
+6168,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,#N/A
+1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,Sweden,2010,415,1035,Inline-5,RWD,170
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,#N/A
+,,,,,,,#N/A
+13524,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
+13524,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
+,,,,,,,
+,,,,,,,#N/A
+,,,,,,,#N/A
+13524,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
+,,,,,,,
+13572,Germany,2026,575HP,1385kg with driver,4.0l flat-6,RWD,80
+,,,,,,,#N/A
+13572,Germany,2026,575HP,1385kg with driver,4.0l flat-6,RWD,80
+,,,,,,,#N/A
+13524,Germany,2022,575HP,1385kg with driver,4.0l flat-6,RWD,80
+,,,,,,,#N/A
+,,,,,,,#N/A
+,,,,,,,#N/A
+,,,,,,,#N/A
+,,,,,,,#N/A
+,,,,,,,#N/A
+,,,,,,,#N/A
+,,,,,,,#N/A
+12771,Italy,2023,570BHP,1380kg with driver,5.2L V10,RWD,80
+12771,Italy,2023,570BHP,1380kg with driver,5.2L V10,RWD,80
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+13591,United States,2026,550,1405kg with driver,,RWD,80
+,,,,,,,#N/A
+13591,United States,2026,550,1405kg with driver,,RWD,80
+13594,Italy,2025,550,1405kg with driver,4.0L V8,RWD,80
+,,,,,,,#N/A
+13594,Italy,2025,550,1405kg with driver,4.0L V8,RWD,80
+13597,Germany,2019,584 BHP,1390kg with driver,6.3L V8,RWD,80
+,,,,,,,#N/A
+13597,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
+,,,,,,,#N/A
+13572,Germany,2026,575HP,1385kg with driver,4.0l flat-6,RWD,80
+13572,Germany,2026,575HP,1385kg with driver,4.0l flat-6,RWD,80
+13603,United Kingdom,2025,545hp,1390g with driver,4.0L V8,RWD,80
+,,,,,,,#N/A
+13603,United Kingdom,2025,545hp,1390g with driver,4.0L V8,RWD,80
+,,,,,,,
+,,,,,,,#N/A
+13597,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
+13594,Italy,2025,550,1405kg with driver,4.0L V8,RWD,80
+,,,,,,,
+,,,,,,,#N/A
+13597,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
+,,,,,,,#N/A
+13594,Italy,2025,550,1405kg with driver,4.0L V8,RWD,80
+13594,Italy,2025,550,1405kg with driver,4.0L V8,RWD,80
+13597,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
+13617,Germany,2025,545bhp,1390Kg with driver,3.0l L6,RWD,80
+,,,,,,,#N/A
+13617,Germany,2025,545bhp,1390Kg with driver,3.0l L6,RWD,80
+13620,United Kingdom,2021,575 BHP,1390kg with driver,4.0L V8,RWD,80
+,,,,,,,#N/A
+13620,United Kingdom,2021,575 BHP,1390kg with driver,4.0L V8,RWD,80
+13617,Germany,2025,545bhp,1390Kg with driver,3.0l L6,RWD,80
+13603,United Kingdom,2025,545hp,1390g with driver,4.0L V8,RWD,80
+,,,,,,,
+13591,United States,2026,550,1405kg with driver,,RWD,80
+13620,United Kingdom,2021,575 BHP,1390kg with driver,4.0L V8,RWD,80
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,#N/A
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+258,Germany,2013,570 BHP,860 KG,"3,4L V8",RWD,55
