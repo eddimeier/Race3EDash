@@ -3,212 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RaceRoom Startaufstellung</title>
+    <title>SimRacing Fahrzeug-Filter</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1a1a1a;
-            margin: 0;
-            padding: 20px;
-            color: #eee;
-        }
-
-        h1 {
-            text-align: center;
-            color: #fff;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: #2a2a2a;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: 1px solid #3a3a3a;
-            display: flex;
-            flex-direction: column;
-            min-height: 400px;
-            height: 100%;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(231, 76, 60, 0.2);
-            border-color: #e74c3c;
-        }
-
-        .image-container {
-            width: 100%;
-            height: 180px;
-            background-color: #111;
-            border-bottom: 3px solid #e74c3c;
-            position: relative;
-        }
-
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .card-content {
-            padding: 20px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .fahrer-name {
-            font-size: 1.4em;
-            margin: 0 0 5px 0;
-            color: #fff;
-            font-weight: 700;
-        }
-
-        .team-name {
-            font-size: 1em;
-            color: #e74c3c;
-            margin: 0 0 12px 0;
-            font-weight: 600;
-        }
-
-        .car-name {
-            font-size: 0.95em;
-            color: #bbb;
-            margin: 0 0 20px 0;
-            background: #1e1e1e;
-            padding: 8px;
-            border-radius: 6px;
-        }
-
-        .meta-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-        }
-
-        .klasse-tag {
-            background-color: #34495e;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 0.8em;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-        }
-
-        .livery-tag {
-            font-size: 0.85em;
-            color: #95a5a6;
-            font-weight: 600;
-            background: #111;
-            padding: 4px 8px;
-            border-radius: 4px;
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        .filter-section { display: flex; gap: 15px; margin-bottom: 20px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        select { padding: 8px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px; }
+        .car-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+        .car-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-left: 5px solid #007bff; }
+        .car-card h3 { margin-top: 0; color: #333; }
+        .tag { display: inline-block; background: #eee; padding: 3px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+.car-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+.car-card { 
+    background: white; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    border-top: 4px solid #007bff; /* Strich oben statt links sieht mit Bildern meistens besser aus */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
     </style>
 </head>
 <body>
 
-    <h1>RaceRoom Grid Dashboard</h1>
-    
-    <div class="grid-container" id="cards-container">
-        <p style="text-align: center; width: 100%;">Lade Fahrzeug- und Fahrerdaten aus der Simulation...</p>
+    <h1>🏎️ Fahrzeug- & Klassen-Auswahl</h1>
+
+    <!-- FILTERBEREICH -->
+    <div class="filter-section">
+        <label>Klasse:
+            <select id="filter-class">
+                <option value="all">Alle Klassen</option>
+            </select>
+        </label>
+        
+        <label>Hersteller (Brand):
+            <select id="filter-brand">
+                <option value="all">Alle Hersteller</option>
+            </select>
+        </label>
     </div>
 
-    <script>
-        async function ladeFahrzeugDaten() {
-            const container = document.getElementById('cards-container');
-            
-            try {
-                const response = await fetch('daten.json');
-                if (!response.ok) throw new Error(`Fehler: ${response.status}`);
-                
-                const data = await response.json();
-                container.innerHTML = ''; 
-                
-                // 1. Auslesen der echten Klassennamen direkt aus dem "classes"-Reiter deiner JSON-Datei
-                const klassenMapping = {};
-                const jsonKlassen = data.classes || data.Classes || {};
-                Object.values(jsonKlassen).forEach(cls => {
-                    const id = cls.Id || cls.id;
-                    const name = cls.Name || cls.name || cls.IdName;
-                    if (id && name) klassenMapping[id] = name;
-                });
+    <!-- ERGEBNISSE -->
+    <div class="car-grid" id="car-container"></div>
 
-                // 2. Auslesen der Herstellernamen aus dem "manufactures"-Reiter deiner JSON-Datei
-                const herstellerMapping = {};
-                const jsonHersteller = data.manufactures || data.manufacturers || {};
-                Object.values(jsonHersteller).forEach(man => {
-                    const id = man.Id || man.id;
-                    const name = man.Name || man.name;
-                    if (id && name) herstellerMapping[id] = name;
-                });
-                
-                const alleAutos = Object.values(data.cars || {});
-                
-                alleAutos.forEach(car => {
-                    if (!car || !car.liveries) return;
-                    
-                    // Holt den echten Namen aus der Liste. Wenn nicht vorhanden, schreibt er "Klasse [ID]"
-                    const klasseAnzeige = klassenMapping[car.Class] || "Klasse " + car.Class;
-                    const herstellerText = herstellerMapping[car.CarManufacturer] || car.BrandName || "";
-                    
-                    car.liveries.forEach(livery => {
-                        if (!livery || !livery.drivers) return;
-                        
-                        livery.drivers.forEach(driver => {
-                            const card = document.createElement('div');
-                            card.className = 'card';
-                            
-                            const bildPfad = "https://game.raceroom.com/store/image_redirect?id=" + livery.Id + "&size=small"; 
-                            
-                            const fahrzeugName = car.Name.startsWith(herstellerText) 
-                                ? car.Name 
-                                : herstellerText + " " + car.Name;
-                            
-                            card.innerHTML = `
-                                <div class="image-container">
-                                    <img src="${bildPfad}" alt="${fahrzeugName}">
-                                </div>
-                                <div class="card-content">
-                                    <div>
-                                        <h2 class="fahrer-name">${driver.Forename} ${driver.Surname}</h2>
-                                        <p class="team-name">${livery.TeamName || 'Privatfahrer'}</p>
-                                        <div class="car-name">🏎️ ${fahrzeugName}</div>
-                                    </div>
-                                    <div class="meta-container">
-                                        <span class="klasse-tag">${klasseAnzeige}</span>
-                                        <span class="livery-tag">Startnummer: ${livery.Name}</span>
-                                    </div>
-                                </div>
-                            `;
-                            
-                            container.appendChild(card);
-                        });
-                    });
-                });
-                
-            } catch (error) {
-                console.error("Fehler:", error);
-                container.innerHTML = `<p style="color: #e74c3c; text-align: center; width: 100%;">Fehler beim Laden der Live-Daten.</p>`;
-            }
-        }
-
-        window.addEventListener('DOMContentLoaded', ladeFahrzeugDaten);
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
