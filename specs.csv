@@ -4793,9 +4793,9 @@ NLS,Germany,,100,"24,433",Europe,,TC
 4865,Sweden,2015,145,545,Inline-4,RWD,193
 ,,,,,,,
 ,,,,,,,
-5051,,,,,,,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
 ,,,,,,,#N/A
-,,,,,,,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -4839,25 +4839,25 @@ Tourist,Germany,,48,"19,170",Europe,,TC
 ,,,,,,,#N/A
 24 Hours,Germany,,100,"25,378",Europe,,TC
 ,,,,,,,
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
 2868,Japan,1989,750,1200,V6,RWD,70
 2868,Japan,1989,750,1200,V6,RWD,70
 2868,Japan,1989,750,1200,V6,RWD,70
@@ -5001,9 +5001,9 @@ Tourist,Germany,,48,"19,170",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-5259,,,,,,,40
+5259,Germany,2015,500+,1110,V8,RWD,40
 ,,,,,,,#N/A
-5259,,,,,,,40
+5259,Germany,2015,500+,1110,V8,RWD,40
 ,,,,,,,40
 ,,,,,,,
 ,,,,,,,
@@ -5067,7 +5067,7 @@ Grand Prix,Sweden,,32,"4,025",Europe,,TC
 3516,Germany,2011,565BHP,1305Kg with Driver,4.0L F6,RWD,80
 ,,,,,,,
 ,,,,,,,
-,,,,,,,40
+5259,Germany,2015,500+,1110,V8,RWD,40
 1782,United States,2007,630BHP,1435kg with driver,5.3L V8,RWD,80
 1782,United States,2007,630BHP,1435kg with driver,5.3L V8,RWD,80
 1782,United States,2007,630BHP,1435kg with driver,5.3L V8,RWD,80
@@ -5333,19 +5333,19 @@ Grand Prix,Sweden,,32,"4,025",Europe,,TC
 5588,Germany,2015,310hp (P2P +30),1125kg,2.0L Inline 4,FWD,189
 ,,,,,,,#N/A
 ,,,,,,,
-,,,,,,,40
+5259,Germany,2015,500+,1110,V8,RWD,40
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -6007,15 +6007,15 @@ Short Circuit,Sweden,,36,"2,400",Europe,,TC
 6262,Germany,2014,333 bhp @ 5800 rpm,1565kg with driver,3.0 Inline-6,RWD,201
 ,,,,,,,#N/A
 6262,Germany,2014,333 bhp @ 5800 rpm,1565kg with driver,3.0 Inline-6,RWD,201
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
-,,,,,,,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
+5259,Germany,2015,500+,1110,V8,RWD,40
 ,,,,,,,
 6334,Sweden,2017,380,1100,Inline-4,FWD,130
 6334,Sweden,2017,380,1100,Inline-4,FWD,130
@@ -7311,8 +7311,8 @@ Full circuit,China,,32,"4,015",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-7218,France,1990,681 bhp @ 13000,560kg (including driver),V12,RWD,15
-7218,France,1990,682 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -7525,8 +7525,8 @@ Motorcycle B Course,Germany,,36,"2,600",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-7218,France,1990,683 bhp @ 13000,560kg (including driver),V12,RWD,15
-7218,France,1990,684 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -7552,9 +7552,9 @@ Motorcycle B Course,Germany,,36,"2,600",Europe,,TC
 7805,Germany,1979,465bhp,1235kg,3.5L straight-6,RWD,199
 ,,,,,,,
 ,,,,,,,
-7810,,,,,,,2
+7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
 ,,,,,,,#N/A
-7810,,,,,,,2
+7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -7565,7 +7565,7 @@ Gesamtstrecke,Germany,,40,"4,274",Europe,,TC
 4675,Germany,2017,485 bhp @ 7500rpm,1205 kg,4.0l Flat-6,RWD,105
 7399,Germany,1992,735,1057kg (with driver),3.2L flat-6,RWD,30
 ,,,,,,,
-7810,,,,,,,2
+7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
 ,,,,,,,
 ,Russia,2015,380,1100,Inline-4,FWD,130
 ,Russia,2015,380,1100,Inline-4,FWD,130
@@ -7587,7 +7587,7 @@ Gesamtstrecke,Germany,,40,"4,274",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,160
-7845,Italy,2019,340,1305 Kg with  Driver,"1,75L In-Line 4",FWD,160
+7845,Italy,2019,340,1305 Kg with  Driver,1.75L In-Line 4,FWD,160
 ,,,,,,,#N/A
 7847,Germany,2019,340 bhp,1315kg with driver,2.0L in-line 4,FWD,160
 ,,,,,,,#N/A
@@ -7655,15 +7655,15 @@ Gesamtstrecke,Germany,,40,"4,274",Europe,,TC
 7220,Sweden,1990,680 bhp@ 12750,560kg (including driver),V10,RWD,15
 7220,Sweden,1990,680 bhp@ 12750,560kg (including driver),V10,RWD,15
 ,,,,,,,
-7218,France,1990,685 bhp @ 13000,560kg (including driver),V12,RWD,15
-7218,France,1990,686 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
 ,,,,,,,#N/A
 ,,,,,,,
-7218,France,1990,687 bhp @ 13000,560kg (including driver),V12,RWD,15
-7218,France,1990,688 bhp @ 13000,560kg (including driver),V12,RWD,15
-7218,France,1990,689 bhp @ 13000,560kg (including driver),V12,RWD,15
-7218,France,1990,690 bhp @ 13000,560kg (including driver),V12,RWD,15
-7218,France,1990,691 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
+7218,France,1990,680 bhp @ 13000,560kg (including driver),V12,RWD,15
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,
@@ -7712,8 +7712,8 @@ Gesamtstrecke,Germany,,40,"4,274",Europe,,TC
 ,,,,,,,
 7926,China,2019,340BHP,1355kg with driver,2.0L in-line 4,FWD,160
 7926,China,2019,340BHP,1355kg with driver,2.0L in-line 4,FWD,160
-7845,Italy,2019,340,1305 Kg with  Driver,"1,75L In-Line 4",FWD,160
-7845,Italy,2019,340,1305 Kg with  Driver,"1,75L In-Line 4",FWD,160
+7845,Italy,2019,340,1305 Kg with  Driver,1.75L In-Line 4,FWD,160
+7845,Italy,2019,340,1305 Kg with  Driver,1.75L In-Line 4,FWD,160
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
@@ -8425,7 +8425,7 @@ Road Course Motorcycle (2006),US,,80,"5,640",America,,TC
 ,,,,,,,215
 ,,,,,,,110
 ,,,,,,,158
-,,,,,,,2
+7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
 ,,,,,,,
 8661,Südkorea,2019,340 bhp,1325 kg,2.0L in-line 4,FWD,160
 8661,Südkorea,2019,340 bhp,1325 kg,2.0L in-line 4,FWD,160
@@ -9061,10 +9061,10 @@ Short with Inner loop,US,,43,"3,943",America,,TC
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
-,,,,,,,2
+7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
 ,,,,,,,#N/A
 Stage,Malaysia,,10,"17,3",Asia,,TC
-,,,,,,,2
+7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
 ,,,,,,,
 Grand Prix with Inner Loop,US,,43,"5,552",America,,TC
 6168,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
@@ -9728,9 +9728,9 @@ Oval,US,,46,"4,023",America,,TC
 ,,,,,,,
 ,,,,,,,
 Grand Prix,Netherlands,,33,"4,555",Europe,,TC
-9986,Germany,2022,1100BHP,5300kg,,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,#N/A
-,Germany,2022,1100BHP,5300kg,,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,217
 8487,Germany,2019,610 BHP,1335kg with driver,F6,RWD,66
 8604,Germany,2019,570BHP,1390kg with driver,5.2L V38,RWD,80
@@ -10359,27 +10359,27 @@ Grand Prix,Brasil,,36,"4,309",America,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
 ,,,,,,,
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
-,,,,,,,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
+5051,Italy,2014,160,570,Inline-4,RWD,125
 ,,,,,,,#N/A
 9603,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
 9603,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
@@ -10901,13 +10901,13 @@ Short,Netherlands,,38,"2,887",Europe,,TC
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 10018,Sweden,2022,1050BHP,769kg,1.6L V6-T Hybrid,RWD,4
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -10957,12 +10957,12 @@ Short,Netherlands,,38,"2,887",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,217
-,,,,,,,217
-,,,,,,,217
-,,,,,,,217
-,,,,,,,217
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -11009,22 +11009,22 @@ Short,Netherlands,,38,"2,887",Europe,,TC
 10914,Japan,2019,184,1140kg,Mazda SKYACTIV,RWD,203
 10914,Japan,2019,184,1140kg,Mazda SKYACTIV,RWD,203
 ,,,,,,,
-,,,,,,,217
-,,,,,,,217
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,#N/A
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,#N/A
-,,,,,,,217
-,,,,,,,217
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
 5821,Sweden,2017,950,620,V10,RWD,5
 ,,,,,,,#N/A
-,,,,,,,217
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
 ,,,,,,,#N/A
 11285,Irland,1966,185BHP,590kg with driver,4-cylinder 2.0L,RWD,195
@@ -11198,7 +11198,7 @@ Moto,Austria,,36,"4,396",Europe,,TC
 8645,Japan,1997,310BHP,1080Kg with Driver,2-Litre 4-Cylinder,FWD,161
 ,,,,,,,
 ,,,,,,,
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -11705,21 +11705,21 @@ Solution 1A,France,,44,"5,752",Europe,,TC
 11342,United States,2021,620BHP,930kg with driver,2-Liter-Turbomotor,RWD,28
 ,,,,,,,
 ,,,,,,,#N/A
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
-,,,,,,,217
-,,,,,,,
-,,,,,,,#N/A
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
 ,,,,,,,#N/A
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
-,,,,,,,217
+,,,,,,,#N/A
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 ,,,,,,,
-,,,,,,,217
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
+,,,,,,,
+9986,Germany,2022,1100BHP,5300kg,12.4,RWD,217
 11342,United States,2021,620BHP,930kg with driver,2-Liter-Turbomotor,RWD,28
 11342,United States,2021,620BHP,930kg with driver,2-Liter-Turbomotor,RWD,28
 11342,United States,2021,620BHP,930kg with driver,2-Liter-Turbomotor,RWD,28
