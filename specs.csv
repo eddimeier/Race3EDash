@@ -6782,39 +6782,39 @@ East Course,Japan,,42,"3,400",Asia,,TC
 ,,,,,,,#N/A
 7036,France,2018,330 bhp,1285 kg,L4,FWD,160
 7036,France,2018,330 bhp,1285 kg,L4,FWD,160
-7040,,,,,,,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
 ,,,,,,,110
 5342,Austria,2012,360,810,Inline-4,RWD,130
 ,,,,,,,#N/A
 ,,,,,,,#N/A
-,,,,,,,110
-,,,,,,,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
 7029,Italy,2018,330,1285 Kg,L4,FWD,160
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
-,,,,,,,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,95
@@ -7552,9 +7552,9 @@ Motorcycle B Course,Germany,,36,"2,600",Europe,,TC
 7805,Germany,1979,465bhp,1235kg,3.5L straight-6,RWD,199
 ,,,,,,,
 ,,,,,,,
-7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
+7810,Germany,2019,500 kW (680 HP),< 1-100 kg (incl. driver),,,2
 ,,,,,,,#N/A
-7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
+7810,Germany,2019,500 kW (680 HP),< 1.100 kg (incl. driver),,,2
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -7565,7 +7565,7 @@ Gesamtstrecke,Germany,,40,"4,274",Europe,,TC
 4675,Germany,2017,485 bhp @ 7500rpm,1205 kg,4.0l Flat-6,RWD,105
 7399,Germany,1992,735,1057kg (with driver),3.2L flat-6,RWD,30
 ,,,,,,,
-7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
+7810,Germany,2019,500 kW (680 HP),< 1-100 kg (incl. driver),,,2
 ,,,,,,,
 ,Russia,2015,380,1100,Inline-4,FWD,130
 ,Russia,2015,380,1100,Inline-4,FWD,130
@@ -7932,7 +7932,7 @@ Westschleife,Germany,,24,"1,845",Europe,,TC
 8166,Germany,2017,485 BHP @ 7500rpm,1205 Kg,4.0l flat-6,RWD,110
 ,,,,,,,#N/A
 ,,,,,,,
-,,,,,,,110
+7040,Germany,2017,,,3.8l flat 6,RWD,110
 5818,Germany,2016,590BHP,1395kg with driver,4.4L V8,RWD,80
 ,,,,,,,
 ,,,,,,,#N/A
@@ -8425,7 +8425,7 @@ Road Course Motorcycle (2006),US,,80,"5,640",America,,TC
 ,,,,,,,215
 ,,,,,,,110
 ,,,,,,,158
-7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
+7810,Germany,2019,500 kW (680 HP),< 1.100 kg (incl. driver),,,2
 ,,,,,,,
 8661,Südkorea,2019,340 bhp,1325 kg,2.0L in-line 4,FWD,160
 8661,Südkorea,2019,340 bhp,1325 kg,2.0L in-line 4,FWD,160
@@ -9061,10 +9061,10 @@ Short with Inner loop,US,,43,"3,943",America,,TC
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,
-7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
+7810,Germany,2019,500 kW (680 HP),< 1-100 kg (incl. driver),,,2
 ,,,,,,,#N/A
 Stage,Malaysia,,10,"17,3",Asia,,TC
-7810,Germany,2019,500 kW (680 HP),"< 1,100 kg (incl. driver)",,,2
+7810,Germany,2019,500 kW (680 HP),< 1.100 kg (incl. driver),,,2
 ,,,,,,,
 Grand Prix with Inner Loop,US,,43,"5,552",America,,TC
 6168,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
