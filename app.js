@@ -272,6 +272,7 @@ function renderCars() {
                             <p style="margin: 3px 0;">⚖️ <strong>Gewicht:</strong> ${car.Gewicht || 'N/A'}</p>
 			    <p style="margin: 3px 0;">⚡ <strong>Motor:</strong> ${car.Motor || 'N/A'}</p>
                             <p style="margin: 3px 0;">🚶‍♂️‍➡️ <strong>Antrieb:</strong> ${car.Antrieb || 'N/A'}</p>
+			    <p style="margin: 3px 0;">🚶‍♂️‍➡️ <strong>Index:</strong> ${car.Index || 'N/A'}</p>
                         </div>
                     </div>
                 </div>
