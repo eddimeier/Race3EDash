@@ -1436,11 +1436,11 @@ Grand Prix,Belgium,,38,"4,011",Europe,,TC
 Grand Prix,Germany,,46,"5,148",Europe,,TC
 ,,,,,,,#N/A
 Grand Prix,Germany,,34,"4,574",Europe,,TC
-1694,Sweden,2010,400,1050,V6,RWD,170
+1694,France,2010,400,1050,V6,RWD,170
 1695,Germany,2009,580 BHP,1325 kg with driver,4.4L V8,RWD,80
 ,,,,,,,
 ,,,,,,,#N/A
-1694,Sweden,2010,400,1050,V6,RWD,170
+1694,France,2010,400,1050,V6,RWD,170
 ,,,,,,,
 1700,Germany,1980,650,875,Inline-4,RWD,100
 ,,,,,,,#N/A
@@ -1483,27 +1483,27 @@ Full Run,France,,1,"10,5",Europe,,TC
 1738,Germany,2012,575 BHP,1330kg with driver,4.4L V8,RWD,80
 ,,,,,,,#N/A
 1738,Germany,2012,575 BHP,1330kg with driver,4.4L V8,RWD,80
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,#N/A
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 1744,Germany,2012,650+,1490,V12,RWD,175
 ,,,,,,,#N/A
 1744,Germany,2012,650+,1490,V12,RWD,175
-1747,US,2009,525+,1150,V8,RWD,75
+1747,United States,2009,525+,1150,V8,RWD,75
 ,,,,,,,#N/A
-1747,US,2009,525+,1150,V8,RWD,75
-1750,,2010,420,1000,Inline-4,RWD,170
+1747,United States,2009,525+,1150,V8,RWD,75
+1750,Germany,2010,420,1000,Inline-4,RWD,170
 ,,,,,,,#N/A
 1750,Germany,2010,420,1000,Inline-4,RWD,170
 1753,Germany,2010,399,1050,V6,RWD,170
 ,,,,,,,#N/A
-1753,,2010,399,1050,V6,RWD,170
-1756,,2009,570,970,V12,RWD,25
+1753,Germany,2010,399,1050,V6,RWD,170
+1756,Sweden,2009,570,970,V12,RWD,25
 ,,,,,,,#N/A
-1756,,2009,570,970,V12,RWD,25
-1759,,2009,450,970,V6,RWD,35
+1756,Sweden,2009,570,970,V12,RWD,25
+1759,Sweden,2009,450,970,V6,RWD,35
 ,,,,,,,#N/A
-1759,,2009,450,970,V6,RWD,35
+1759,Sweden,2009,450,970,V6,RWD,35
 ,,,,,,,
 National,Germany,,32,"3,692",Europe,,TC
 Short,Germany,,32,"2,638",Europe,,TC
@@ -1523,37 +1523,37 @@ Short,Germany,,32,"2,638",Europe,,TC
 Grand Prix,Portugal,,46,"4,69",Europe,,TC
 1779,US,2011,609 BHP,1280 Kg,V8,RWD,68
 ,,,,,,,#N/A
-1779,US,2011,609 BHP,1280 Kg,V8,RWD,68
-1782,US,2007,630BHP,1435kg with driver,5.3L V8,RWD,80
+1779,United States,2011,609 BHP,1280 Kg,V8,RWD,68
+1782,United States,2007,630BHP,1435kg with driver,5.3L V8,RWD,80
 Moto,Portugal,,46,"4,15",Europe,,TC
 Chicane,Portugal,,46,"3,88",Europe,,TC
 Short,Portugal,,46,"3,885",Europe,,TC
 ,,,,,,,#N/A
-1782,,2007,630BHP,1435kg with driver,5.3L V8,RWD,80
+1782,United States,2007,630BHP,1435kg with driver,5.3L V8,RWD,80
 1788,Germany,2008,612 BHP,1275 Kg,V8,RWD,68
 ,,,,,,,#N/A
-1788,,2008,612 BHP,1275 Kg,V8,RWD,68
+1788,Germany,2008,612 BHP,1275 Kg,V8,RWD,68
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-1794,,2007,598 BHP,1275 Kg,V8,RWD,68
+1794,Sweden,2007,598 BHP,1275 Kg,V8,RWD,68
 ,,,,,,,#N/A
-1794,,2007,598 BHP,1275 Kg,V8,RWD,68
+1794,Sweden,2007,598 BHP,1275 Kg,V8,RWD,68
 1797,United Kingdom,2007,600+,1490,V8,RWD,175
 ,,,,,,,#N/A
 1797,United Kingdom,2007,600+,1490,V8,RWD,175
-1800,,2009,535,970,V8,RWD,25
+1800,Sweden,2009,535,970,V8,RWD,25
 ,,,,,,,#N/A
-1800,,2009,535,970,V8,RWD,25
-1803,,2009,450,970,V8,RWD,35
+1800,Sweden,2009,535,970,V8,RWD,25
+1803,United Kingdom,2009,450,970,V8,RWD,35
 ,,,,,,,#N/A
-1803,,2009,450,970,V8,RWD,35
+1803,United Kingdom,2009,450,970,V8,RWD,35
 ,,,,,,,
 1807,Japan,2011,653 BHP,1320 Kg,V8,RWD,68
 ,,,,,,,#N/A
-1807,,2011,653 BHP,1320 Kg,V8,RWD,68
+1807,Japan,2011,653 BHP,1320 Kg,V8,RWD,68
 ,,,,,,,
-1811,,2011,600BHP,1370kg with driver,3.8L V6,RWD,80
+1811,Japan,2011,600BHP,1370kg with driver,3.8L V6,RWD,80
 ,,,,,,,
 ,,,,,,,#N/A
 ,,,,,,,
@@ -1568,20 +1568,20 @@ Short,Portugal,,46,"3,885",Europe,,TC
 1821,Italia,2011,560BHP,1305kg with driver,4.3L V8,RWD,80
 1824,Italia,2009,670 BHP,1184 Kg,Mercedes-Benz V12,RWD,90
 ,,,,,,,#N/A
-1824,,2009,670 BHP,1184 Kg,Mercedes-Benz V12,RWD,90
+1824,Italia,2009,670 BHP,1184 Kg,Mercedes-Benz V12,RWD,90
 1827,United Kingdom,2006,470,970,Inline-4,RWD,35
 ,,,,,,,
 ,,,,,,,#N/A
-1827,,2006,470,970,Inline-4,RWD,35
+1827,United Kingdom,2006,470,970,Inline-4,RWD,35
 1831,United Kingdom,2006,475,970,V8,RWD,35
 ,,,,,,,#N/A
-1831,,2006,475,970,V8,RWD,35
-1834,,2007,612 BHP,1300 Kg,Flat-6,RWD,68
+1831,United Kingdom,2006,475,970,V8,RWD,35
+1834,Germany,2007,612 BHP,1300 Kg,Flat-6,RWD,68
 ,,,,,,,#N/A
-1834,,2007,612 BHP,1300 Kg,Flat-6,RWD,68
-1837,,2011,545+,1150,FLAT-6,RWD,75
+1834,Germany,2007,612 BHP,1300 Kg,Flat-6,RWD,68
+1837,Germany,2011,545+,1150,FLAT-6,RWD,75
 ,,,,,,,#N/A
-1837,,2011,545+,1150,FLAT-6,RWD,75
+1837,Germany,2011,545+,1150,FLAT-6,RWD,75
 ,,,,,,,
 Grand Prix,Japan,,46,"5,807",Asia,,TC
 ,,,,,,,
@@ -1610,9 +1610,9 @@ Grand Prix,US,,50,"3,602",America,,TC
 ,,,,,,,
 Grand Prix,Hungary,,48,"4,381",Europe,,TC
 ,,,,,,,
-1800,,2009,535,970,V8,RWD,25
+1800,Sweden,2009,535,970,V8,RWD,25
 ,,,,,,,
-1803,,2009,450,970,V8,RWD,35
+1803,United Kingdom,2009,450,970,V8,RWD,35
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -1625,7 +1625,7 @@ Grand Prix,Hungary,,48,"4,381",Europe,,TC
 ,,,,,,,
 1700,Germany,1980,650,875,Inline-4,RWD,100
 ,,,,,,,
-1694,,2010,400,1050,V6,RWD,170
+1694,France,2010,400,1050,V6,RWD,170
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -1676,16 +1676,16 @@ Grand Prix,Hungary,,48,"4,381",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-252,,2009,315,890,V8,RWD,150
+252,Denmark,2009,315,890,V8,RWD,150
 ,,,,,,,#N/A
-252,,2009,315,890,V8,RWD,150
-252,,2009,315,890,V8,RWD,150
+252,Denmark,2009,315,890,V8,RWD,150
+252,Denmark,2009,315,890,V8,RWD,150
 ,,,,,,,#N/A
-252,,2009,315,890,V8,RWD,150
-252,,2009,315,890,V8,RWD,150
-1756,,2009,570,970,V12,RWD,25
+252,Denmark,2009,315,890,V8,RWD,150
+252,Denmark,2009,315,890,V8,RWD,150
+1756,Sweden,2009,570,970,V12,RWD,25
 ,,,,,,,
-1686,,2004,615 BHP,1295 Kg,V8,RWD,68
+1686,United States,2004,615 BHP,1295 Kg,V8,RWD,68
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -1791,10 +1791,10 @@ Grand Prix,China,,48,"5,451",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-1750,,2010,420,1000,Inline-4,RWD,170
+1750,Germany,2010,420,1000,Inline-4,RWD,170
 ,,,,,,,
-1753,,2010,399,1050,V6,RWD,170
-1741,,2010,415,1035,Inline-5,RWD,170
+1753,Germany,2010,399,1050,V6,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,#N/A
 258,Germany,2013,570 BHP,860 KG,"3,4L V8",RWD,55
 ,,,,,,,
@@ -1862,7 +1862,7 @@ Grand Prix,Slovakia,,44,"5,922",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-1759,,2009,450,970,V6,RWD,35
+1759,Sweden,2009,450,970,V6,RWD,35
 ,,,,,,,
 ,,,,,,,
 Grand Prix,Macau,,41,"6,115",Asia,,TC
@@ -2270,7 +2270,7 @@ Indy,UK,,34,"1,929",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-1741,RR,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,#N/A
 ,,,,,,,
 ,,,,,,,#N/A
@@ -2584,10 +2584,10 @@ Nordschleife,Germany,,32,"20,830",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-2842,,2013,300,1100,Inline-4,FWD,145
+2842,Russia,2013,300,1100,Inline-4,FWD,145
 ,,,,,,,#N/A
-2842,,2013,300,1100,Inline-4,FWD,145
-2842,,2013,300,1100,Inline-4,FWD,145
+2842,Russia,2013,300,1100,Inline-4,FWD,145
+2842,Russia,2013,300,1100,Inline-4,FWD,145
 2846,Germany,2013,310,1150,Inline-4,FWD,145
 ,,,,,,,#N/A
 2846,Germany,2013,310,1150,Inline-4,FWD,145
@@ -3241,7 +3241,7 @@ Grand Prix,China,,40,"4,319",Asia,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,Germany,,,,,,155
+,,,,,,,155
 3500,Germany,2012,585BHP,1350kg with driver,5.2L V57,RWD,80
 ,,,,,,,#N/A
 ,,,,,,,#N/A
@@ -4092,10 +4092,10 @@ Full Circuit,Thailand,,40,"4,539",Asia,,TC
 1756,,2009,570,970,V12,RWD,25
 ,,,,,,,#N/A
 ,,,,,,,
-1759,,2009,450,970,V6,RWD,35
-1759,,2009,450,970,V6,RWD,35
-1759,,2009,450,970,V6,RWD,35
-1759,,2009,450,970,V6,RWD,35
+1759,Sweden,2009,450,970,V6,RWD,35
+1759,Sweden,2009,450,970,V6,RWD,35
+1759,Sweden,2009,450,970,V6,RWD,35
+1759,Sweden,2009,450,970,V6,RWD,35
 ,,,,,,,#N/A
 ,,,,,,,
 1800,United Kingdom,2009,535,970,V8,RWD,25
@@ -4103,10 +4103,10 @@ Full Circuit,Thailand,,40,"4,539",Asia,,TC
 1800,United Kingdom,2009,535,970,V8,RWD,25
 1800,United Kingdom,2009,535,970,V8,RWD,25
 ,,,,,,,#N/A
-1803,,2009,450,970,V8,RWD,35
-1803,,2009,450,970,V8,RWD,35
-1803,,2009,450,970,V8,RWD,35
-1803,,2009,450,970,V8,RWD,35
+1803,United Kingdom,2009,450,970,V8,RWD,35
+1803,United Kingdom,2009,450,970,V8,RWD,35
+1803,United Kingdom,2009,450,970,V8,RWD,35
+1803,United Kingdom,2009,450,970,V8,RWD,35
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -4429,38 +4429,38 @@ Combined,Belgium,,100,"7,004",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,#N/A
-1694,RR,2010,400,1050,V6,RWD,170
+1694,France,2010,400,1050,V6,RWD,170
 ,,,,,,,#N/A
-1694,RR,2010,400,1050,V6,RWD,170
+1694,France,2010,400,1050,V6,RWD,170
 ,,,,,,,#N/A
-1694,RR,2010,400,1050,V6,RWD,170
+1694,France,2010,400,1050,V6,RWD,170
 ,,,,,,,#N/A
-1694,RR,2010,400,1050,V6,RWD,170
+1694,France,2010,400,1050,V6,RWD,170
 ,,,,,,,#N/A
-1741,RR,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,#N/A
-1741,RR,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,#N/A
-1741,RR,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,#N/A
-1741,RR,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,
 ,,,,,,,#N/A
-1750,RR,2010,420,1000,Inline-4,RWD,170
+1750,Germany,2010,420,1000,Inline-4,RWD,170
 ,,,,,,,#N/A
-1750,RR,2010,420,1000,Inline-4,RWD,170
+1750,Germany,2010,420,1000,Inline-4,RWD,170
 ,,,,,,,#N/A
-1750,RR,2010,420,1000,Inline-4,RWD,170
+1750,Germany,2010,420,1000,Inline-4,RWD,170
 ,,,,,,,#N/A
-1750,RR,2010,420,1000,Inline-4,RWD,170
+1750,Germany,2010,420,1000,Inline-4,RWD,170
 ,,,,,,,#N/A
-1753,RR,2010,399,1050,V6,RWD,170
+1753,Germany,2010,399,1050,V6,RWD,170
 ,,,,,,,#N/A
-1753,RR,2010,399,1050,V6,RWD,170
+1753,Germany,2010,399,1050,V6,RWD,170
 ,,,,,,,#N/A
-1753,RR,2010,399,1050,V6,RWD,170
+1753,Germany,2010,399,1050,V6,RWD,170
 ,,,,,,,#N/A
-1753,RR,2010,399,1050,V6,RWD,170
+1753,Germany,2010,399,1050,V6,RWD,170
 ,,,,,,,
 4720,Russia,2015,380,1100,Inline-4,FWD,120
 ,,,,,,,#N/A
@@ -5945,11 +5945,11 @@ Short Circuit,Sweden,,36,"2,400",Europe,,TC
 6195,Japan,2014,380,1100,Inline-4,FWD,130
 6195,Japan,2014,380,1100,Inline-4,FWD,130
 6195,Japan,2014,380,1100,Inline-4,FWD,130
-6203,,,,,,,130
+6203,Russian,2015,380,1100,Inline-5,FWD,130
 ,,,,,,,#N/A
-6203,,,,,,,130
-6203,,,,,,,130
-6203,,,,,,,130
+6203,Russian,2015,380,1100,Inline-6,FWD,130
+6203,Russian,2015,380,1100,Inline-7,FWD,130
+6203,Russian,2015,380,1100,Inline-8,FWD,130
 6208,Sweden,2016,380,1100,Inline-4,FWD,130
 ,,,,,,,#N/A
 6208,Sweden,2016,380,1100,Inline-4,FWD,130
@@ -6535,7 +6535,7 @@ Road Course,Japan,,42,"4,800",Asia,,TC
 6623,Germany,2017,385 BHP @ 7500 RPM,1300Kg,3.8l flat 6,RWD,165
 6791,,,,,,,45
 ,,,,,,,#N/A
-,,,,,,,45
+6791,,,,,,,45
 ,,,,,,,45
 6168,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
 ,,,,,,,
@@ -6589,42 +6589,42 @@ Road Course,Japan,,42,"4,800",Asia,,TC
 ,,,,,,,#N/A
 4675,Germany,2017,485 bhp @ 7500rpm,1205 kg,4.0l Flat-6,RWD,105
 ,,,,,,,#N/A
-,,,,,,,45
-,,,,,,,45
+6791,,,,,,,45
+6791,,,,,,,45
 6849,,,,,,,45
 ,,,,,,,#N/A
 ,,,,,,,
-,,,,,,,45
-,,,,,,,45
-,,,,,,,160
+6849,,,,,,,45
+6849,,,,,,,45
+,Germany,,,,,,160
 ,,,,,,,#N/A
-,,,,,,,45
+6849,,,,,,,45
 ,,,,,,,
-,,,,,,,45
-,,,,,,,45
-6860,,,,,,,45
+6849,,,,,,,45
+6849,,,,,,,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6860,Germany,1992,350+,970,Inline-4,RWD,45
+6849,,,,,,,45
 ,,,,,,,#N/A
 ,,,,,,,45
 ,,,,,,,45
@@ -6696,17 +6696,17 @@ Road Course,Japan,,42,"4,800",Asia,,TC
 ,,,,,,,#N/A
 ,,,,,,,#N/A
 ,,,,,,,#N/A
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
-,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
+6949,,,,,,,45
 ,,,,,,,45
 ,,,,,,,45
 ,,,,,,,45
@@ -9371,7 +9371,7 @@ WTCR,Spain,,32,"5,627",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-8940,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
+8940,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
 8936,Germany,2016,590BHP,1395kg with driver,4.4L V8,RWD,80
 5818,Germany,2016,590BHP,1395kg with driver,4.4L V8,RWD,80
 8936,Germany,2016,590BHP,1395kg with driver,4.4L V8,RWD,80
@@ -10074,7 +10074,7 @@ GP Course Oval T1,Germany,,36,"4,534",Europe,,TC
 ,,,,,,,
 ,,,,,,,
 9603,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
-9603,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
+6168,Germany,2016,590 BHP,1390kg with driver,6.3L V8,RWD,80
 ,,,,,,,#N/A
 ,,,,,,,
 8166,Germany,2017,485 BHP @ 7500rpm,1205 Kg,4.0l flat-6,RWD,110
@@ -13296,12 +13296,12 @@ Moto,Belgium,,56,7004,Europe,,TC
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,#N/A
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
-1741,Sweden,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
+1741,France,2010,415,1035,Inline-5,RWD,170
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -13339,7 +13339,7 @@ Moto,Belgium,,56,7004,Europe,,TC
 13594,Italy,2025,550,1405kg with driver,4.0L V8,RWD,80
 ,,,,,,,#N/A
 13594,Italy,2025,550,1405kg with driver,4.0L V8,RWD,80
-13597,Germany,2019,584 BHP,1390kg with driver,6.3L V8,RWD,80
+13597,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
 ,,,,,,,#N/A
 13597,Germany,2019,585 BHP,1390kg with driver,6.3L V8,RWD,80
 ,,,,,,,#N/A
